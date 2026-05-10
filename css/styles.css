@@ -1,0 +1,552 @@
+/* ============================================================
+   ACG — Adrián Cano González · Dossier Artístico
+   acg_dossier.css
+   ============================================================ */
+
+/* ── FONTS ── */
+@font-face {
+    font-family: "Host Grotesk";
+    src: url("/home/claude/fonts/HostGrotesk-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Host Grotesk";
+    src: url("/home/claude/fonts/HostGrotesk-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Host Grotesk";
+    src: url("/home/claude/fonts/HostGrotesk-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Host Grotesk";
+    src: url("/home/claude/fonts/HostGrotesk-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Datatype";
+    src: url("/home/claude/fonts/Datatype-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+html {
+    font-size: 17px;
+}
+
+/* ── RESET ── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ── TOKENS ── */
+:root {
+    --bg: #0a0a0a;
+    --surface: #111111;
+    --border: #222222;
+    --accent: #e0e0e0;
+    --muted: #7a7a7a;
+    --highlight: #00ff44;
+    --secondary: #d000ff;
+    --text: #d4d4d4;
+    --text-light: #888888;
+    --page-w: 210mm;
+    --images-w: 260px;
+}
+
+/* ── BASE ── */
+html {
+    font-size: 16px;
+    background: var(--bg);
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 0.875rem; /* ≈ 14px — base del cuerpo */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ══════════════════════════════════════════
+   WRAPPER — columna de page-conts
+   ══════════════════════════════════════════ */
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ══════════════════════════════════════════
+   PAGE-CONT — contenedor de cada par
+   ══════════════════════════════════════════ */
+.page-cont {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+/* ── PAGE-IMAGES — columna de imágenes (60%) ── */
+.page-images {
+    flex: 0 0 60%;
+    width: 60%;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    overflow: hidden;
+}
+
+/* ── PAGE — columna de contenido (40%) ── */
+.page {
+    flex: 0 0 40%;
+    width: 40%;
+    min-height: 100%;
+    padding: 16mm 14mm 16mm 14mm;
+    page-break-after: always;
+    position: relative;
+    background: var(--bg);
+    overflow-y: auto;
+}
+.page:last-child {
+    page-break-after: avoid;
+}
+
+/* ══════════════════════════════════════════
+   COVER PAGE
+   ══════════════════════════════════════════ */
+.cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 297mm;
+    padding: 22mm 16mm 18mm 16mm;
+}
+
+.cover-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8mm;
+    margin-bottom: 12mm;
+}
+
+.cover-label {
+    font-family: "Datatype", monospace;
+    font-size: 0.65rem; /* 6.5pt → 10.4px */
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.cover-year {
+    font-family: "Datatype", monospace;
+    font-size: 0.65rem;
+    color: var(--muted);
+}
+
+.cover-hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20mm 0;
+}
+
+.cover-acronym {
+    font-family: "Datatype", monospace;
+    font-size: 7rem; /* 80pt → 112px */
+    font-weight: 400;
+    color: var(--highlight);
+    letter-spacing: -0.02em;
+    line-height: 0.9;
+    margin-bottom: 8mm;
+}
+
+.cover-fullname {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 1.1rem; /* 13pt → 17.6px */
+    font-weight: 300;
+    color: var(--accent);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 2mm;
+}
+
+.cover-alias {
+    font-family: "Datatype", monospace;
+    font-size: 0.65rem; /* 7pt → 10.4px */
+    color: var(--muted);
+    letter-spacing: 0.12em;
+}
+
+.cover-desc {
+    max-width: 100mm;
+    font-size: 0.8rem; /* 9pt → 12.8px */
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-top: 8mm;
+    border-left: 2px solid var(--secondary);
+    padding-left: 5mm;
+}
+
+.cover-disciplines {
+    display: flex;
+    gap: 3mm;
+    flex-wrap: wrap;
+    margin-top: 6mm;
+}
+
+.chip {
+    font-family: "Datatype", monospace;
+    font-size: 0.6rem; /* 6.5pt → 9.6px */
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    padding: 1mm 3mm;
+    text-transform: uppercase;
+}
+
+.cover-bottom {
+    border-top: 1px solid var(--border);
+    padding-top: 5mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.cover-contact {
+    font-family: "Datatype", monospace;
+    font-size: 0.6rem; /* 6.5pt → 9.6px */
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    line-height: 1.8;
+}
+
+.cover-index {
+    font-family: "Datatype", monospace;
+    font-size: 0.6rem;
+    color: var(--muted);
+    text-align: right;
+    line-height: 1.8;
+}
+
+/* ══════════════════════════════════════════
+   SECTION HEADER
+   ══════════════════════════════════════════ */
+.section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 4mm;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 4mm;
+    margin-bottom: 6mm;
+}
+
+.section-num {
+    font-family: "Datatype", monospace;
+    font-size: 0.7rem;
+    color: var(--secondary);
+    letter-spacing: 0.1em;
+}
+
+.section-title {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+    line-height: 1;
+}
+
+.section-tag {
+    margin-left: auto;
+    font-family: "Datatype", monospace;
+    font-size: 0.55rem;
+    color: var(--muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+/* ══════════════════════════════════════════
+   PROJECT CARDS
+   ══════════════════════════════════════════ */
+.project-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4mm;
+}
+
+.project-card {
+    border: 1px solid var(--border);
+    padding: 5mm 6mm;
+    position: relative;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--highlight);
+}
+
+.project-name {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 1mm;
+}
+
+.project-alias {
+    font-family: "Datatype", monospace;
+    font-size: 0.6rem;
+    color: var(--highlight);
+    letter-spacing: 0.1em;
+    margin-bottom: 2mm;
+}
+
+.project-desc {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.project-meta {
+    display: flex;
+    gap: 2mm;
+    margin-top: 3mm;
+    flex-wrap: wrap;
+}
+
+.meta-tag {
+    font-family: "Datatype", monospace;
+    font-size: 0.55rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid var(--border);
+    padding: 0.5mm 2mm;
+}
+
+/* ── TWO COLUMNS ── */
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4mm;
+}
+
+/* ══════════════════════════════════════════
+   AWARDS
+   ══════════════════════════════════════════ */
+.award-card {
+    border: 1px solid var(--border);
+    padding: 5mm 6mm;
+    display: flex;
+    align-items: flex-start;
+    gap: 5mm;
+    position: relative;
+}
+
+.award-icon {
+    font-family: "Datatype", monospace;
+    font-size: 1.4rem;
+    color: var(--secondary);
+    line-height: 1;
+    flex-shrink: 0;
+    width: 10mm;
+    text-align: center;
+}
+
+.award-info {
+}
+
+.award-title {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 1mm;
+}
+
+.award-body {
+    font-size: 0.7rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.award-year {
+    font-family: "Datatype", monospace;
+    font-size: 0.6rem;
+    color: var(--muted);
+    margin-top: 1mm;
+    display: block;
+}
+
+/* ══════════════════════════════════════════
+   PAGE FOOTER
+   ══════════════════════════════════════════ */
+.page-footer {
+    position: absolute;
+    bottom: 10mm;
+    left: 16mm;
+    right: 16mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border);
+    padding-top: 3mm;
+}
+
+.footer-name {
+    font-family: "Datatype", monospace;
+    font-size: 0.55rem; /* 6pt → 8.8px */
+    color: var(--muted);
+    letter-spacing: 0.12em;
+}
+
+.footer-page {
+    font-family: "Datatype", monospace;
+    font-size: 0.55rem;
+    color: var(--muted);
+}
+
+/* ══════════════════════════════════════════
+   INTRO BOX
+   ══════════════════════════════════════════ */
+.intro-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 4mm 5mm;
+    margin-bottom: 4mm;
+}
+
+.intro-box p {
+    font-size: 0.8rem; /* 9pt → 12.8px */
+    color: var(--text-light);
+    line-height: 1.75;
+}
+
+/* ── DIVIDER ── */
+.divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 5mm 0;
+}
+
+/* ── HIGHLIGHT ── */
+.hl {
+    color: var(--highlight);
+}
+
+/* ══════════════════════════════════════════
+   FEATURE CARD (T37 / Radio)
+   ══════════════════════════════════════════ */
+.feature-card {
+    border: 1px solid var(--border);
+    padding: 6mm;
+    margin-bottom: 4mm;
+    background: var(--surface);
+    position: relative;
+}
+
+.feature-card-label {
+    font-family: "Datatype", monospace;
+    font-size: 0.55rem; /* 6pt → 8.8px */
+    color: var(--highlight);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 2mm;
+}
+
+.feature-card-title {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 1.05rem; /* 12pt → 16.8px */
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 2mm;
+}
+
+.feature-card-body {
+    font-size: 0.75rem; /* 8.5pt → 12px */
+    color: var(--text-light);
+    line-height: 1.65;
+}
+
+.inline-chips {
+    display: flex;
+    gap: 2mm;
+    flex-wrap: wrap;
+    margin-top: 3mm;
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — MOBILE
+   ══════════════════════════════════════════ */
+@media screen and (max-width: 900px) {
+    body {
+        justify-content: flex-start;
+    }
+
+    .page-cont {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .page-images {
+        flex: none;
+        width: 100%;
+        min-height: 200px;
+        border-right: none;
+        border-top: 1px solid var(--border);
+        order: 2;
+    }
+
+    .page {
+        flex: none;
+        width: 100%;
+        min-height: auto;
+        padding: 8vw 5vw 16vw 5vw;
+        overflow-y: visible;
+        order: 1;
+    }
+
+    html {
+        font-size: 15px;
+    }
+
+    .cover-acronym {
+        font-size: 22vw;
+    }
+
+    .cover-hero {
+        padding: 8vw 0;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .page-footer {
+        position: static;
+        margin-top: 12vw;
+        padding-top: 4vw;
+        bottom: auto;
+        left: auto;
+        right: auto;
+    }
+
+    .cover-desc {
+        max-width: 100%;
+    }
+}
