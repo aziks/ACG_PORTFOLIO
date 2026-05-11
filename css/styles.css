@@ -619,3 +619,10 @@ body {
         max-width: 100%;
     }
 }
+
+@media screen and (max-width: 512px) {
+    .masonry > ul > li {
+        height: 45vh;
+        flex-grow: 1;
+    }
+}
