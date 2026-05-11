@@ -45,7 +45,8 @@ html {
 :root {
     --bg: #0a0a0a;
     --surface: #111111;
-    --border: #222222;
+    --border: #3b3b3b;
+    --border-hover: #525252;
     --accent: #e0e0e0;
     --muted: #7a7a7a;
     --highlight: #00ff44;
@@ -112,6 +113,36 @@ body {
 }
 .page:last-child {
     page-break-after: avoid;
+}
+
+/* MASONRY GALLERY */
+
+.masonry {
+    padding: 20px 0 80px 0;
+}
+
+.masonry > h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.masonry > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.masonry > ul > li {
+    height: 25vh;
+    flex-grow: 1;
+}
+
+.masonry > ul > li > img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
 }
 
 /* ══════════════════════════════════════════
@@ -284,6 +315,11 @@ body {
     border: 1px solid var(--border);
     padding: 5mm 6mm;
     position: relative;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: var(--border-hover);
 }
 
 .project-card::before {
@@ -333,6 +369,11 @@ body {
     text-transform: uppercase;
     border: 1px solid var(--border);
     padding: 0.5mm 2mm;
+    transition: 0.3s;
+}
+
+.meta-tag:hover {
+    border-color: var(--border-hover);
 }
 
 /* ── TWO COLUMNS ── */
@@ -443,6 +484,34 @@ body {
 /* ── HIGHLIGHT ── */
 .hl {
     color: var(--highlight);
+}
+
+.hl-secondary {
+    color: var(--secondary);
+}
+
+/* ── LINKS en alias y labels ── */
+.project-alias a,
+.feature-card-label a,
+.award-year a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+/* ── "Sobre ACG" al final de Premios ── */
+.sobre-acg {
+    margin-top: 6mm;
+}
+
+.sobre-acg .section-header {
+    margin-bottom: 4mm;
+}
+
+.subsection-title {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--accent);
 }
 
 /* ══════════════════════════════════════════
