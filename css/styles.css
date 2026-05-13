@@ -30,10 +30,6 @@
     font-weight: 400;
 }
 
-html {
-    font-size: 17px;
-}
-
 /* ── RESET ── */
 * {
     margin: 0;
@@ -53,13 +49,11 @@ html {
     --secondary: #d000ff;
     --text: #d4d4d4;
     --text-light: #888888;
-    --page-w: 210mm;
-    --images-w: 260px;
 }
 
 /* ── BASE ── */
 html {
-    font-size: 16px;
+    font-size: 17px;
     background: var(--bg);
 }
 
@@ -67,7 +61,7 @@ body {
     background: var(--bg);
     color: var(--text);
     font-family: "Host Grotesk", sans-serif;
-    font-size: 0.875rem; /* ≈ 14px — base del cuerpo */
+    font-size: 0.875rem;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -98,9 +92,19 @@ body {
     background: var(--surface);
     border-right: 1px solid var(--border);
     overflow: hidden;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* ── COVER CANVAS ── */
+#cover-canvas {
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* ── PAGE — columna de contenido (40%) ── */
@@ -108,7 +112,7 @@ body {
     flex: 0 0 40%;
     width: 40%;
     min-height: 100%;
-    padding: 16mm 14mm 16mm 14mm;
+    padding: 64px 56px;
     page-break-after: always;
     position: relative;
     background: var(--bg);
@@ -118,12 +122,7 @@ body {
     page-break-after: avoid;
 }
 
-/* MASONRY GALLERY */
-
-.masonry {
-    /* padding: 2rem; */
-}
-
+/* ── MASONRY GALLERY ── */
 .masonry > h2 {
     font-size: 36px;
     font-weight: bold;
@@ -155,8 +154,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 297mm;
-    padding: 22mm 16mm 18mm 16mm;
+    min-height: 100%;
+    padding: 88px 64px 72px 64px;
 }
 
 .cover-top {
@@ -164,13 +163,13 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     border-bottom: 1px solid var(--border);
-    padding-bottom: 8mm;
-    margin-bottom: 12mm;
+    padding-bottom: 32px;
+    margin-bottom: 48px;
 }
 
 .cover-label {
     font-family: "Datatype", monospace;
-    font-size: 0.65rem; /* 6.5pt → 10.4px */
+    font-size: 0.65rem;
     color: var(--muted);
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -187,66 +186,66 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20mm 0;
+    padding: 80px 0;
 }
 
 .cover-acronym {
     font-family: "Datatype", monospace;
-    font-size: 7rem; /* 80pt → 112px */
+    font-size: 7rem;
     font-weight: 400;
     color: var(--highlight);
     letter-spacing: -0.02em;
     line-height: 0.9;
-    margin-bottom: 8mm;
+    margin-bottom: 32px;
 }
 
 .cover-fullname {
     font-family: "Host Grotesk", sans-serif;
-    font-size: 1.1rem; /* 13pt → 17.6px */
+    font-size: 1.1rem;
     font-weight: 300;
     color: var(--accent);
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    margin-bottom: 2mm;
+    margin-bottom: 8px;
 }
 
 .cover-alias {
     font-family: "Datatype", monospace;
-    font-size: 0.65rem; /* 7pt → 10.4px */
+    font-size: 0.65rem;
     color: var(--muted);
     letter-spacing: 0.12em;
 }
 
 .cover-desc {
-    max-width: 100mm;
-    font-size: 0.8rem; /* 9pt → 12.8px */
+    max-width: 380px;
+    font-size: 0.8rem;
     color: var(--text-light);
     line-height: 1.7;
-    margin-top: 8mm;
+    margin-top: 32px;
     border-left: 2px solid var(--secondary);
-    padding-left: 5mm;
+    padding-left: 20px;
 }
 
 .cover-disciplines {
     display: flex;
-    gap: 3mm;
+    gap: 12px;
     flex-wrap: wrap;
-    margin-top: 6mm;
+    margin-top: 24px;
 }
 
 .chip {
     font-family: "Datatype", monospace;
-    font-size: 0.6rem; /* 6.5pt → 9.6px */
+    font-size: 0.6rem;
     letter-spacing: 0.1em;
     color: var(--muted);
     border: 1px solid var(--border);
-    padding: 1mm 3mm;
+    padding: 4px 12px;
     text-transform: uppercase;
 }
 
 .cover-bottom {
     border-top: 1px solid var(--border);
-    padding-top: 5mm;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -254,7 +253,7 @@ body {
 
 .cover-contact {
     font-family: "Datatype", monospace;
-    font-size: 0.6rem; /* 6.5pt → 9.6px */
+    font-size: 0.6rem;
     color: var(--muted);
     letter-spacing: 0.08em;
     line-height: 1.8;
@@ -274,10 +273,10 @@ body {
 .section-header {
     display: flex;
     align-items: baseline;
-    gap: 4mm;
+    gap: 16px;
     border-bottom: 1px solid var(--border);
-    padding-bottom: 4mm;
-    margin-bottom: 6mm;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .section-num {
@@ -311,12 +310,12 @@ body {
 .project-grid {
     display: flex;
     flex-direction: column;
-    gap: 4mm;
+    gap: 16px;
 }
 
 .project-card {
     border: 1px solid var(--border);
-    padding: 5mm 6mm;
+    padding: 20px 24px;
     position: relative;
     transition: 0.3s;
 }
@@ -340,7 +339,7 @@ body {
     font-size: 0.9rem;
     font-weight: 700;
     color: var(--accent);
-    margin-bottom: 1mm;
+    margin-bottom: 4px;
 }
 
 .project-alias {
@@ -348,7 +347,7 @@ body {
     font-size: 0.6rem;
     color: var(--highlight);
     letter-spacing: 0.1em;
-    margin-bottom: 2mm;
+    margin-bottom: 8px;
 }
 
 .project-desc {
@@ -359,8 +358,8 @@ body {
 
 .project-meta {
     display: flex;
-    gap: 2mm;
-    margin-top: 3mm;
+    gap: 8px;
+    margin-top: 12px;
     flex-wrap: wrap;
 }
 
@@ -371,7 +370,7 @@ body {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     border: 1px solid var(--border);
-    padding: 0.5mm 2mm;
+    padding: 2px 8px;
     transition: 0.3s;
 }
 
@@ -383,7 +382,7 @@ body {
 .two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4mm;
+    gap: 16px;
 }
 
 /* ══════════════════════════════════════════
@@ -391,10 +390,10 @@ body {
    ══════════════════════════════════════════ */
 .award-card {
     border: 1px solid var(--border);
-    padding: 5mm 6mm;
+    padding: 20px 24px;
     display: flex;
     align-items: flex-start;
-    gap: 5mm;
+    gap: 20px;
     position: relative;
 }
 
@@ -404,7 +403,7 @@ body {
     color: var(--secondary);
     line-height: 1;
     flex-shrink: 0;
-    width: 10mm;
+    width: 40px;
     text-align: center;
 }
 
@@ -416,7 +415,7 @@ body {
     font-size: 0.9rem;
     font-weight: 700;
     color: var(--accent);
-    margin-bottom: 1mm;
+    margin-bottom: 4px;
 }
 
 .award-body {
@@ -429,7 +428,7 @@ body {
     font-family: "Datatype", monospace;
     font-size: 0.6rem;
     color: var(--muted);
-    margin-top: 1mm;
+    margin-top: 4px;
     display: block;
 }
 
@@ -438,19 +437,19 @@ body {
    ══════════════════════════════════════════ */
 .page-footer {
     position: absolute;
-    bottom: 10mm;
-    left: 16mm;
-    right: 16mm;
+    bottom: 40px;
+    left: 56px;
+    right: 56px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid var(--border);
-    padding-top: 3mm;
+    padding-top: 12px;
 }
 
 .footer-name {
     font-family: "Datatype", monospace;
-    font-size: 0.55rem; /* 6pt → 8.8px */
+    font-size: 0.55rem;
     color: var(--muted);
     letter-spacing: 0.12em;
 }
@@ -467,12 +466,12 @@ body {
 .intro-box {
     background: var(--surface);
     border: 1px solid var(--border);
-    padding: 4mm 5mm;
-    margin-bottom: 4mm;
+    padding: 16px 20px;
+    margin-bottom: 16px;
 }
 
 .intro-box p {
-    font-size: 0.8rem; /* 9pt → 12.8px */
+    font-size: 0.8rem;
     color: var(--text-light);
     line-height: 1.75;
 }
@@ -481,7 +480,7 @@ body {
 .divider {
     border: none;
     border-top: 1px solid var(--border);
-    margin: 5mm 0;
+    margin: 20px 0;
 }
 
 /* ── HIGHLIGHT ── */
@@ -496,18 +495,19 @@ body {
 /* ── LINKS en alias y labels ── */
 .project-alias a,
 .feature-card-label a,
-.award-year a {
+.award-year a,
+.hl-secondary {
     color: var(--secondary);
     text-decoration: none;
 }
 
 /* ── "Sobre ACG" al final de Premios ── */
 .sobre-acg {
-    margin-top: 6mm;
+    margin-top: 24px;
 }
 
 .sobre-acg .section-header {
-    margin-bottom: 4mm;
+    margin-bottom: 16px;
 }
 
 .subsection-title {
@@ -522,40 +522,40 @@ body {
    ══════════════════════════════════════════ */
 .feature-card {
     border: 1px solid var(--border);
-    padding: 6mm;
-    margin-bottom: 4mm;
+    padding: 24px;
+    margin-bottom: 16px;
     background: var(--surface);
     position: relative;
 }
 
 .feature-card-label {
     font-family: "Datatype", monospace;
-    font-size: 0.55rem; /* 6pt → 8.8px */
+    font-size: 0.55rem;
     color: var(--highlight);
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    margin-bottom: 2mm;
+    margin-bottom: 8px;
 }
 
 .feature-card-title {
     font-family: "Host Grotesk", sans-serif;
-    font-size: 1.05rem; /* 12pt → 16.8px */
+    font-size: 1.05rem;
     font-weight: 700;
     color: var(--accent);
-    margin-bottom: 2mm;
+    margin-bottom: 8px;
 }
 
 .feature-card-body {
-    font-size: 0.75rem; /* 8.5pt → 12px */
+    font-size: 0.75rem;
     color: var(--text-light);
     line-height: 1.65;
 }
 
 .inline-chips {
     display: flex;
-    gap: 2mm;
+    gap: 8px;
     flex-wrap: wrap;
-    margin-top: 3mm;
+    margin-top: 12px;
 }
 
 /* ══════════════════════════════════════════
