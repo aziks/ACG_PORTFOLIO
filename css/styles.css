@@ -139,12 +139,22 @@ body {
 .masonry > ul > li {
     height: 40vh;
     flex-grow: 1;
+    overflow: hidden;
 }
 
 .masonry > ul > li > img {
     max-height: 100%;
     min-width: 100%;
     object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.masonry > ul > li > img:hover {
+    transform: scale(1.1);
+}
+
+#images-web img {
+    object-fit: contain;
 }
 
 /* ══════════════════════════════════════════
@@ -595,7 +605,9 @@ body {
     display: block;
     opacity: 0;
     transform: scale(0.96);
-    transition: opacity 0.25s ease, transform 0.25s ease;
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
     pointer-events: none;
 }
 
@@ -670,8 +682,15 @@ body {
 }
 
 @media screen and (max-width: 512px) {
-    .masonry > ul > li {
-        height: 45vh;
-        flex-grow: 1;
+    .masonry > ul {
+        flex-direction: column;
+    }
+
+    .masonry > ul > li > img {
+        object-fit: contain;
+    }
+
+    #images-web li {
+        height: 23vh;
     }
 }
