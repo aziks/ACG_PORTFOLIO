@@ -133,7 +133,7 @@ body {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 2rem;
 }
 
 .masonry > ul > li {
