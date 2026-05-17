@@ -212,11 +212,11 @@ body {
 .cover-fullname {
     font-family: "Host Grotesk", sans-serif;
     font-size: 1.1rem;
-    font-weight: 300;
-    color: var(--accent);
+    font-weight: bold;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     margin-bottom: 8px;
+    color: var(--secondary);
 }
 
 .cover-alias {
