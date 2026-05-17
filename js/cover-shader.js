@@ -275,13 +275,11 @@
      *                  que TODOS los píxeles participen (sin stops)     *
      *  PASSES_PER_FRAME iteraciones de burbuja por fotograma: más =     *
      *                  runs más largos, efecto más agresivo             */
-    const SORT_DURATION = 20.0;
-    const STOP_MIN = -0.3;
-    const PASSES_PER_FRAME = 7.5;
 
-    /* t0 fijado en el momento que ejecuta el script (carga de la página),
-       no cuando termina de cargar la imagen, para que el efecto cuente
-       desde el primer instante visible.                                  */
+    const SORT_DURATION = 10.0; /* segundos por ciclo                             */
+    const STOP_MIN = -0.25; /* umbral final: negativo = sin stops             */
+    const PASSES_PER_FRAME = 1; /* 1 iteración/frame → el sort respeta el tiempo  */
+
     const t0 = performance.now();
 
     function frame(ts) {
@@ -291,11 +289,13 @@
 
         const elapsed = (ts - t0) * 0.001;
 
-        /* rampa suavizada (ease-in): el efecto arranca despacio
-           y se acelera a medida que pasa el tiempo               */
-        const t = Math.min(1.0, elapsed / SORT_DURATION);
-        const ease = t * t;
-        const stop = 1.0 - ease * (1.0 - STOP_MIN);
+        /* posición dentro del ciclo actual (0→1 lineal, se repite) */
+        const t = (elapsed % SORT_DURATION) / SORT_DURATION;
+
+        /* umbral lineal: 1.0 (nada) → STOP_MIN (todo).
+           Cada ciclo nuevo empieza a ordenar de nuevo sobre el estado
+           acumulado del ciclo anterior, sin resetear la imagen.        */
+        const stop = 1.0 - t * (1.0 - STOP_MIN);
 
         /* ── N pases de sort por frame ── */
         gl.useProgram(sortProg);
