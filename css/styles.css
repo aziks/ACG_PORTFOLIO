@@ -511,6 +511,25 @@ body {
     text-decoration: none;
 }
 
+/* ── ICONO DE ENLACE EXTERNO ──
+   Sustituye al carácter 🡥. Usa mask-image para que el color
+   del SVG se controle desde CSS y herede del texto circundante. */
+.link-icon {
+    display: inline-block;
+    width: 0.85em;
+    height: 0.85em;
+    background-color: var(--secondary);
+    -webkit-mask-image: url("../media/icon/link.svg");
+            mask-image: url("../media/icon/link.svg");
+    -webkit-mask-size: contain;
+            mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+            mask-position: center;
+    vertical-align: -0.05em;
+}
+
 /* ── "Sobre ACG" al final de Premios ── */
 .sobre-acg {
     margin-top: 24px;
