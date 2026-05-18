@@ -690,6 +690,10 @@ body {
         object-fit: contain;
     }
 
+    #images-cover {
+        height: 80vh;
+    }
+
     #images-web li {
         height: 23vh;
     }
