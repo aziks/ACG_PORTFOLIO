@@ -107,6 +107,15 @@ body {
     height: 75%;
 }
 
+/* ── PREMIOS CANVAS ── */
+#premios-canvas {
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* ── PAGE — columna de contenido (40%) ── */
 .page {
     flex: 0 0 40%;
