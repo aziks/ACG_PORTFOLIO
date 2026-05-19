@@ -262,38 +262,56 @@
     const STOP_MIN         = -0.25;
     const PASSES_PER_FRAME = 1;
 
-    const t0 = performance.now();
+    /* El efecto sólo arranca cuando la sección entra en el viewport.
+       Hasta entonces el blit muestra la imagen original sin modificar. */
+    let t0     = null;
+    let active = false;
+
+    const observer = new IntersectionObserver(function(entries){
+        for(const e of entries){
+            if(e.isIntersecting && !active){
+                active = true;
+                t0 = performance.now();
+                /* sólo necesitamos disparar una vez */
+                observer.disconnect();
+            }
+        }
+    }, { threshold: 0.1 });
+    observer.observe(container);
 
     function frame(ts){
         requestAnimationFrame(frame);
         resize();
         if(!imgLoaded || !fboW || !fboH) return;
 
-        const elapsed = (ts - t0) * 0.001;
-        const t = (elapsed % SORT_DURATION) / SORT_DURATION;
-        const stop = 1.0 - t * (1.0 - STOP_MIN);
+        /* sort pass: sólo si la sección está activa */
+        if(active){
+            const elapsed = (ts - t0) * 0.001;
+            const t = (elapsed % SORT_DURATION) / SORT_DURATION;
+            const stop = 1.0 - t * (1.0 - STOP_MIN);
 
-        gl.useProgram(sortProg);
-        bindQuad(sortProg);
-        gl.uniform2f(uSort.res,   fboW, fboH);
-        gl.uniform1f(uSort.stop,  stop);
-        gl.uniform1f(uSort.steps, 1.0);
+            gl.useProgram(sortProg);
+            bindQuad(sortProg);
+            gl.uniform2f(uSort.res,   fboW, fboH);
+            gl.uniform1f(uSort.stop,  stop);
+            gl.uniform1f(uSort.steps, 1.0);
 
-        for(let p = 0; p < PASSES_PER_FRAME; p++){
-            const readIdx  = pingIdx;
-            const writeIdx = 1 - pingIdx;
+            for(let p = 0; p < PASSES_PER_FRAME; p++){
+                const readIdx  = pingIdx;
+                const writeIdx = 1 - pingIdx;
 
-            gl.activeTexture(gl.TEXTURE0);
-            gl.bindTexture(gl.TEXTURE_2D, texs[readIdx]);
-            gl.uniform1i(uSort.tex,   0);
-            gl.uniform1f(uSort.frame, frameCount);
+                gl.activeTexture(gl.TEXTURE0);
+                gl.bindTexture(gl.TEXTURE_2D, texs[readIdx]);
+                gl.uniform1i(uSort.tex,   0);
+                gl.uniform1f(uSort.frame, frameCount);
 
-            gl.bindFramebuffer(gl.FRAMEBUFFER, fbos[writeIdx]);
-            gl.viewport(0, 0, fboW, fboH);
-            gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+                gl.bindFramebuffer(gl.FRAMEBUFFER, fbos[writeIdx]);
+                gl.viewport(0, 0, fboW, fboH);
+                gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
 
-            pingIdx = writeIdx;
-            frameCount++;
+                pingIdx = writeIdx;
+                frameCount++;
+            }
         }
 
         gl.useProgram(blitProg);
