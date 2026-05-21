@@ -133,6 +133,15 @@ body {
     height: 75%;
 }
 
+/* ── T37 CANVAS ── */
+#t37-canvas {
+    display: block;
+    /* position: absolute; */
+    inset: 0;
+    width: 75%;
+    height: 75%;
+}
+
 /* ── PAGE — columna de contenido (40%) ── */
 .page {
     flex: 0 0 40%;
@@ -677,7 +686,7 @@ body {
     .page-images {
         flex: none;
         width: 100%;
-        min-height: 200px;
+        min-height: 75vh;
         border-right: none;
         border-top: 1px solid var(--border);
         order: 2;
@@ -723,6 +732,17 @@ body {
 
     .cover-desc {
         max-width: 100%;
+    }
+
+    /* el contenedor T37 adopta el aspect ratio de wordart.png
+       (2194 × 1461) para que el canvas no quede con bandas vacías */
+    #images-t37 {
+        min-height: 0;
+        aspect-ratio: 2194 / 1461;
+    }
+    #t37-canvas {
+        width: 100%;
+        height: 100%;
     }
 }
 
