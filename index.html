@@ -304,7 +304,7 @@
                             </li>
                             <li>
                                 <img
-                                    style="filter: invert(1)"
+                                    style="filter: invert(1); object-fit: contain"
                                     src="media/img/video/jpeg_icon_MAS COMP.jpg"
                                     alt=""
                                     loading="lazy" />
@@ -370,37 +370,6 @@
                             </div>
                         </div>
 
-                        <div class="project-card">
-                            <div class="project-name">Ketapasando</div>
-                            <div class="project-alias">
-                                // Colectivo ·
-                                <a href="https://ketapasando.com" target="_blank"
-                                    >ketapasando.com
-                                    <span class="link-icon" aria-hidden="true"></span
-                                ></a>
-                                ·
-                                <a href="https://ketapasando.bandcamp.com" target="_blank"
-                                    >ketapasando.bandcamp.com
-                                    <span class="link-icon" aria-hidden="true"></span
-                                ></a>
-                            </div>
-                            <div class="project-desc">
-                                Colaboración habitual con <span class="hl">Ketapasando</span>,
-                                colectivo y sello audiovisual con base en Madrid que funciona como
-                                promotora, label y motor de creación colaborativa. Sus eventos
-                                combinan live sets, livecoding y VJ en directo, terreno natural para
-                                la práctica audiovisual de optikCalx. Ketapasando rechaza etiquetas
-                                fijas y opera desde la escucha sin prejuicios y la resistencia
-                                cultural underground.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">Colectivo</span>
-                                <span class="meta-tag">Madrid</span>
-                                <span class="meta-tag">Colaboración</span>
-                                <span class="meta-tag">Live A/V</span>
-                            </div>
-                        </div>
-
                         <div class="two-col">
                             <div class="project-card">
                                 <div class="project-name">Glitch Art</div>
@@ -430,6 +399,37 @@
                                     <span class="meta-tag">Experimental</span>
                                     <span class="meta-tag">Postproducción</span>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-name">Ketapasando</div>
+                            <div class="project-alias">
+                                // Colectivo ·
+                                <a href="https://ketapasando.com" target="_blank"
+                                    >ketapasando.com
+                                    <span class="link-icon" aria-hidden="true"></span
+                                ></a>
+                                ·
+                                <a href="https://ketapasando.bandcamp.com" target="_blank"
+                                    >ketapasando.bandcamp.com
+                                    <span class="link-icon" aria-hidden="true"></span
+                                ></a>
+                            </div>
+                            <div class="project-desc">
+                                Colaboración habitual con <span class="hl">Ketapasando</span>,
+                                colectivo y sello audiovisual con base en Madrid que funciona como
+                                promotora, label y motor de creación colaborativa. Sus eventos
+                                combinan live sets, livecoding y VJ en directo, terreno natural para
+                                la práctica audiovisual de optikCalx. Ketapasando rechaza etiquetas
+                                fijas y opera desde la escucha sin prejuicios y la resistencia
+                                cultural underground.
+                            </div>
+                            <div class="project-meta">
+                                <span class="meta-tag">Colectivo</span>
+                                <span class="meta-tag">Madrid</span>
+                                <span class="meta-tag">Colaboración</span>
+                                <span class="meta-tag">Live A/V</span>
                             </div>
                         </div>
                     </div>
@@ -923,7 +923,30 @@
      PAGE-CONT 7 — RADIO
 ═══════════════════════════════════════════ -->
             <div class="page-cont">
-                <div class="page-images" id="images-radio"></div>
+                <div class="page-images" id="images-radio">
+                    <div class="masonry">
+                        <ul>
+                            <li>
+                                <img src="media/img/radio/circuit.jpg" alt="" loading="lazy" />
+                            </li>
+                            <li>
+                                <img src="media/img/radio/spiral.png" alt="" loading="lazy" />
+                            </li>
+                            <li>
+                                <img src="media/img/radio/wot.jpg" alt="" loading="lazy" />
+                            </li>
+                            <li>
+                                <img src="media/img/radio/image.webp" alt="" loading="lazy" />
+                            </li>
+                            <li>
+                                <img
+                                    src="media/img/radio/texture_blanck.gif"
+                                    alt=""
+                                    loading="lazy" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
                 <div class="page" id="radio">
                     <div class="section-header">
@@ -1216,6 +1239,9 @@
             </div>
         </div>
         <!-- /.wrapper -->
+
+        <!-- ribbon de cierre (div con background → no afecta al lightbox) -->
+        <div class="footer-ribbon" aria-hidden="true"></div>
         <script src="js/pixel-sort.js" defer></script>
         <script src="js/premios-shader.js" defer></script>
         <script src="js/script.js" defer></script>

@@ -40,7 +40,7 @@
 
             /* el factor 1.6 amplía el rango de p → zoom out: la
                "esfera" pasa a ocupar la zona central con margen alrededor */
-            vec2 p  = (FC * 2.0 - r) / r.y * 2.5;
+            vec2 p  = (FC * 2.0 - r) / r.y * 3.0;
             vec2 l  = vec2(0.0);
             vec2 i  = vec2(0.0);
 
