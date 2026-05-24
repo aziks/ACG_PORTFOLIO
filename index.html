@@ -5,8 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ACG — Adrián Cano González · Dossier Artístico</title>
         <link rel="stylesheet" href="css/styles.css" />
+
+        <!-- GSAP + ScrollSmoother (todo gratis desde 3.13, Webflow) -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js" defer></script>
     </head>
     <body>
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
         <div class="wrapper">
             <!-- ══════════════════════════════════════════
      PAGE-CONT 1 — COVER
@@ -1242,6 +1249,9 @@
 
         <!-- ribbon de cierre (div con background → no afecta al lightbox) -->
         <div class="footer-ribbon" aria-hidden="true"></div>
+            </div><!-- /#smooth-content -->
+        </div><!-- /#smooth-wrapper -->
+        <script src="js/smooth-scroll.js" defer></script>
         <script src="js/pixel-sort.js" defer></script>
         <script src="js/premios-shader.js" defer></script>
         <script src="js/script.js" defer></script>

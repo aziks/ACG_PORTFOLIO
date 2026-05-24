@@ -313,7 +313,9 @@
             /* sort pass: sólo si la sección está activa */
             if(active){
                 const elapsed = (ts - t0) * 0.001;
-                const t = (elapsed % SORT_DURATION) / SORT_DURATION;
+                /* rampa única que llega a STOP_MIN y se queda ahí:
+                   sin cortes, sin reinicios, el sort sigue de forma continua */
+                const t    = Math.min(1.0, elapsed / SORT_DURATION);
                 const stop = 1.0 - t * (1.0 - STOP_MIN);
 
                 gl.useProgram(sortProg);
