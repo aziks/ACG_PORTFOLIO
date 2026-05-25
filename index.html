@@ -8,1249 +8,1352 @@
 
         <!-- GSAP + ScrollSmoother (todo gratis desde 3.13, Webflow) -->
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js" defer></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+            defer></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"
+            defer></script>
     </head>
     <body>
         <div id="smooth-wrapper">
             <div id="smooth-content">
-        <div class="wrapper">
-            <!-- ══════════════════════════════════════════
+                <div class="wrapper">
+                    <!-- ══════════════════════════════════════════
      PAGE-CONT 1 — COVER
 ═══════════════════════════════════════════ -->
-            <div id="cover" class="page-cont">
-                <div class="page-images" id="images-cover"></div>
+                    <div id="cover" class="page-cont">
+                        <div class="page-images" id="images-cover"></div>
 
-                <div class="cover page" id="cover">
-                    <div class="cover-top">
-                        <div class="cover-label">Dossier Artístico · 2025</div>
-                        <div class="cover-year">Advanced Cybernetics Group</div>
+                        <div class="cover page" id="cover">
+                            <div class="cover-top">
+                                <div class="cover-label">Dossier Artístico · 2025</div>
+                                <div class="cover-year">Advanced Cybernetics Group</div>
+                            </div>
+
+                            <div class="cover-hero">
+                                <div class="cover-acronym">ACG</div>
+                                <div class="cover-fullname">Adrián Cano González</div>
+                                <div class="cover-alias">
+                                    // Advanced Cybernetics Group — Alias paraguas para todos los
+                                    proyectos artísticos
+                                </div>
+
+                                <div class="cover-desc">
+                                    Artista audiovisual multidisciplinar con base en Madrid. ACG
+                                    opera como nombre paraguas para un conjunto de prácticas que
+                                    atraviesan el vídeo, la música, el livecoding, el diseño web y
+                                    la cultura digital DIY. Su trabajo explora la intersección entre
+                                    tecnología, error, sonido y comunidad.
+                                </div>
+
+                                <div class="cover-disciplines">
+                                    <span class="chip">Music</span>
+                                    <span class="chip">Video Art</span>
+                                    <span class="chip">VJ</span>
+                                    <span class="chip">Livecoding</span>
+                                    <span class="chip">TidalCycles</span>
+                                    <span class="chip">Web Design</span>
+                                    <span class="chip">Radio</span>
+                                    <span class="chip">DIY Culture</span>
+                                    <span class="chip">Net Art</span>
+                                </div>
+                            </div>
+
+                            <div class="cover-bottom">
+                                <div class="cover-contact">
+                                    adriancano@—.com<br />
+                                    acg.xyz / @acg
+                                </div>
+                                <div class="cover-index">
+                                    01 · Música<br />
+                                    02 · Video<br />
+                                    03 · Livecoding<br />
+                                    04 · Diseño Web<br />
+                                    05 · T37<br />
+                                    06 · Radio<br />
+                                    07 · Premios
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="cover-hero">
-                        <div class="cover-acronym">ACG</div>
-                        <div class="cover-fullname">Adrián Cano González</div>
-                        <div class="cover-alias">
-                            // Advanced Cybernetics Group — Alias paraguas para todos los proyectos
-                            artísticos
-                        </div>
-
-                        <div class="cover-desc">
-                            Artista audiovisual multidisciplinar con base en Madrid. ACG opera como
-                            nombre paraguas para un conjunto de prácticas que atraviesan el vídeo,
-                            la música, el livecoding, el diseño web y la cultura digital DIY. Su
-                            trabajo explora la intersección entre tecnología, error, sonido y
-                            comunidad.
-                        </div>
-
-                        <div class="cover-disciplines">
-                            <span class="chip">Music</span>
-                            <span class="chip">Video Art</span>
-                            <span class="chip">VJ</span>
-                            <span class="chip">Livecoding</span>
-                            <span class="chip">TidalCycles</span>
-                            <span class="chip">Web Design</span>
-                            <span class="chip">Radio</span>
-                            <span class="chip">DIY Culture</span>
-                            <span class="chip">Net Art</span>
-                        </div>
-                    </div>
-
-                    <div class="cover-bottom">
-                        <div class="cover-contact">
-                            adriancano@—.com<br />
-                            acg.xyz / @acg
-                        </div>
-                        <div class="cover-index">
-                            01 · Música<br />
-                            02 · Video<br />
-                            03 · Livecoding<br />
-                            04 · Diseño Web<br />
-                            05 · T37<br />
-                            06 · Radio<br />
-                            07 · Premios
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ══════════════════════════════════════════
+                    <!-- ══════════════════════════════════════════
      PAGE-CONT 2 — MÚSICA
 ═══════════════════════════════════════════ -->
-            <div class="page-cont">
-                <div class="page-images" id="images-musica">
-                    <div class="masonry">
-                        <ul>
-                            <li>
-                                <img
-                                    src="media/img/music/noise_worley-2.png"
-                                    alt=""
-                                    loading="lazy" />
-                            </li>
-                            <li>
-                                <img src="media/img/music/RUNE SIMP.png" alt="" loading="lazy" />
-                            </li>
-                            <li>
-                                <img
-                                    src="media/img/music/a3593681219_10.jpg"
-                                    alt=""
-                                    loading="lazy" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                    <div class="page-cont">
+                        <div class="page-images" id="images-musica">
+                            <div class="masonry">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="media/img/music/noise_worley-2.png"
+                                            alt=""
+                                            loading="lazy" />
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="media/img/music/RUNE SIMP.png"
+                                            alt=""
+                                            loading="lazy" />
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="media/img/music/a3593681219_10.jpg"
+                                            alt=""
+                                            loading="lazy" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-                <div class="page" id="musica">
-                    <div class="section-header">
-                        <span class="section-num">01 /</span>
-                        <h1 class="section-title">Música</h1>
-                        <span class="section-tag"
-                            >Producción · Instrumentos Digitales y Analógicos</span
-                        >
-                    </div>
+                        <div class="page" id="musica">
+                            <div class="section-header">
+                                <span class="section-num">01 /</span>
+                                <h1 class="section-title">Música</h1>
+                                <span class="section-tag"
+                                    >Producción · Instrumentos Digitales y Analógicos</span
+                                >
+                            </div>
 
-                    <div class="intro-box">
-                        <p>
-                            ACG desarrolla proyectos musicales de naturaleza híbrida, combinando
-                            síntesis analógica, procesado digital, instrumentos acústicos
-                            modificados y herramientas de software. No existe un género fijo: el
-                            proceso y la exploración tímbrica son el eje central. Cada proyecto
-                            surge de un contexto, una pregunta o una colaboración distintos.
-                        </p>
-                    </div>
+                            <div class="intro-box">
+                                <p>
+                                    ACG desarrolla proyectos musicales de naturaleza híbrida,
+                                    combinando síntesis analógica, procesado digital, instrumentos
+                                    acústicos modificados y herramientas de software. No existe un
+                                    género fijo: el proceso y la exploración tímbrica son el eje
+                                    central. Cada proyecto surge de un contexto, una pregunta o una
+                                    colaboración distintos.
+                                </p>
+                            </div>
 
-                    <div class="project-grid">
-                        <div class="two-col">
-                            <div class="project-card">
-                                <div class="project-name">Producción Electrónica</div>
-                                <div class="project-desc">
-                                    Tracks y álbumes que exploran el ambient, el techno experimental
-                                    y el noise. Producidos con sintetizadores analógicos, módulos
-                                    Eurorack y DAW. Atención al detalle en el diseño de sonido y la
-                                    textura.
+                            <div class="project-grid">
+                                <div class="two-col">
+                                    <div class="project-card">
+                                        <div class="project-name">Producción Electrónica</div>
+                                        <div class="project-desc">
+                                            Tracks y álbumes que exploran el ambient, el techno
+                                            experimental y el noise. Producidos con sintetizadores
+                                            analógicos, módulos Eurorack y DAW. Atención al detalle
+                                            en el diseño de sonido y la textura.
+                                        </div>
+                                        <div class="project-meta">
+                                            <span class="meta-tag">Ambient</span>
+                                            <span class="meta-tag">Techno</span>
+                                            <span class="meta-tag">Eurorack</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card">
+                                        <div class="project-name">Improvisación</div>
+                                        <div class="project-desc">
+                                            Sesiones de improvisación libre en solitario y con otros
+                                            músicos. Uso de instrumentos acústicos con procesado en
+                                            tiempo real, exploración de la aleatoriedad controlada y
+                                            la escucha activa.
+                                        </div>
+                                        <div class="project-meta">
+                                            <span class="meta-tag">Free Improv</span>
+                                            <span class="meta-tag">Live</span>
+                                            <span class="meta-tag">Colaboración</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="project-meta">
-                                    <span class="meta-tag">Ambient</span>
-                                    <span class="meta-tag">Techno</span>
-                                    <span class="meta-tag">Eurorack</span>
+
+                                <div class="project-card">
+                                    <div class="project-name">Nullable</div>
+                                    <div class="project-alias">// nullable.bandcamp.com/music</div>
+                                    <div class="project-desc">
+                                        Proyecto musical publicado en Bandcamp.
+                                        <em>n u l l a b l e</em> explora territorios sonoros
+                                        abstractos e introspectivos, con una estética minimalista
+                                        que oscila entre el ambient, el drone y estructuras
+                                        electrónicas de bajo tempo. El nombre hace referencia al
+                                        concepto de nulidad en programación —valores ausentes,
+                                        indefinidos, en suspensión—, trasladado al ámbito sonoro
+                                        como metáfora del silencio y del margen. Entre las últimas
+                                        actuaciones en vivo destaca la participación en el festival
+                                        <span class="hl">SYNC</span> celebrado en la
+                                        <span class="hl">EKO de Carabanchel</span>, junto al
+                                        colectivo
+                                        <a
+                                            href="https://www.instagram.com/sync_npc/"
+                                            target="_blank"
+                                            class="hl-secondary"
+                                            >Ketapasando
+                                            <span class="link-icon" aria-hidden="true"></span></a
+                                        >.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">Bandcamp</span>
+                                        <span class="meta-tag">Techno</span>
+                                        <span class="meta-tag">Drone</span>
+                                        <span class="meta-tag">Electrónica</span>
+                                        <span class="meta-tag">SYNC · EKO</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-card">
+                                    <div class="project-name">
+                                        El lado izquierdo muerto del cuerpo
+                                    </div>
+                                    <div class="project-alias">
+                                        // Ambient · Drone · Eurorack ·
+                                        <a
+                                            href="https://nullable.bandcamp.com/album/mediocres-meditaciones-modularizadas"
+                                            target="_blank"
+                                            >nullable.bandcamp.com
+                                            <span class="link-icon" aria-hidden="true"></span
+                                        ></a>
+                                    </div>
+                                    <div class="project-desc">
+                                        Proyecto musical centrado en un sonido ambient y drone,
+                                        principalmente creado con diferentes módulos de Eurorack
+                                        grabados en una sola toma y sin edición posterior. La
+                                        ausencia de postproducción es parte del lenguaje: el error,
+                                        el ruido y la deriva del sistema analógico quedan
+                                        registrados tal como suceden.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">Ambient</span>
+                                        <span class="meta-tag">Drone</span>
+                                        <span class="meta-tag">Eurorack</span>
+                                        <span class="meta-tag">Single Take</span>
+                                        <span class="meta-tag">Modular</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-card">
+                                    <div class="project-name">Xtraperlo Records</div>
+                                    <div class="project-alias">
+                                        // Co-fundador · Sello · 8 años ·
+                                        <a
+                                            href="https://xtraperlorecords.bandcamp.com/"
+                                            target="_blank"
+                                            >xtraperlorecords.bandcamp.com
+                                            <span class="link-icon" aria-hidden="true"></span
+                                        ></a>
+                                    </div>
+                                    <div class="project-desc">
+                                        Sello de música electrónica co-creado y gestionado durante 8
+                                        años, especializado en subgéneros de techno duro. Editó a
+                                        diferentes artistas en formato digital y vinilo. Bajo el
+                                        alias
+                                        <span class="hl">Null {variable}</span> —proyecto musical de
+                                        nullable— se publicaron trabajos dentro del catálogo del
+                                        sello. En algunas ocasiones también se encargó del diseño
+                                        gráfico de las portadas de los discos editados.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">Sello</span>
+                                        <span class="meta-tag">Techno Duro</span>
+                                        <span class="meta-tag">Vinilo</span>
+                                        <span class="meta-tag">Digital</span>
+                                        <span class="meta-tag">Diseño Gráfico</span>
+                                        <span class="meta-tag">8 años</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-card">
+                                    <div class="project-name">U+0000</div>
+                                    <div class="project-alias">
+                                        // Techno · Noise · Distorsión ·
+                                        <a
+                                            href="https://soundcloud.com/youplusfourzeros"
+                                            target="_blank"
+                                            >soundcloud.com/youplusfourzeros
+                                            <span class="link-icon" aria-hidden="true"></span
+                                        ></a>
+                                    </div>
+                                    <div class="project-desc">
+                                        Techno en sus variantes más post-género: distorsión
+                                        estructural, degradación del sonido como lenguaje y no como
+                                        accidente, ruido como arma. U+0000 opera en el punto donde
+                                        el ritmo deja de ser propulsor y se convierte en residuo;
+                                        loops que se comen a sí mismos, texturas que no llegan a
+                                        ningún sitio porque el sitio ya no existe.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">Techno</span>
+                                        <span class="meta-tag">Post-género</span>
+                                        <span class="meta-tag">Distorsión</span>
+                                        <span class="meta-tag">Noise</span>
+                                        <span class="meta-tag">Power electronics</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-card">
+                                    <div class="project-name">Max Tinnitus</div>
+                                    <div class="project-alias">
+                                        // Breakcore · Speedcore · Mashup ·
+                                        <a
+                                            href="https://soundcloud.com/max-tinnitus"
+                                            target="_blank"
+                                            >soundcloud.com/max-tinnitus
+                                            <span class="link-icon" aria-hidden="true"></span
+                                        ></a>
+                                    </div>
+                                    <div class="project-desc">
+                                        Proyecto de sátira musical a través de géneros extremos:
+                                        breakcore, speedcore y mashup. Las actuaciones en vivo son
+                                        performances cargadas de comportamiento troll e
+                                        interacciones absurdas con el público, donde el espectáculo
+                                        y la provocación son parte del lenguaje. Con este alias se
+                                        publicaron trabajos en múltiples sellos como
+                                        <span class="hl">Day of the Droids</span> y
+                                        <span class="hl">Hormonal VibrationZ</span>.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">Breakcore</span>
+                                        <span class="meta-tag">Speedcore</span>
+                                        <span class="meta-tag">Mashup</span>
+                                        <span class="meta-tag">Live Performance</span>
+                                        <span class="meta-tag">Sátira</span>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="project-card">
-                                <div class="project-name">Improvisación</div>
-                                <div class="project-desc">
-                                    Sesiones de improvisación libre en solitario y con otros
-                                    músicos. Uso de instrumentos acústicos con procesado en tiempo
-                                    real, exploración de la aleatoriedad controlada y la escucha
-                                    activa.
-                                </div>
-                                <div class="project-meta">
-                                    <span class="meta-tag">Free Improv</span>
-                                    <span class="meta-tag">Live</span>
-                                    <span class="meta-tag">Colaboración</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-name">Nullable</div>
-                            <div class="project-alias">// nullable.bandcamp.com/music</div>
-                            <div class="project-desc">
-                                Proyecto musical publicado en Bandcamp.
-                                <em>n u l l a b l e</em> explora territorios sonoros abstractos e
-                                introspectivos, con una estética minimalista que oscila entre el
-                                ambient, el drone y estructuras electrónicas de bajo tempo. El
-                                nombre hace referencia al concepto de nulidad en programación
-                                —valores ausentes, indefinidos, en suspensión—, trasladado al ámbito
-                                sonoro como metáfora del silencio y del margen. Entre las últimas
-                                actuaciones en vivo destaca la participación en el festival
-                                <span class="hl">SYNC</span> celebrado en la
-                                <span class="hl">EKO de Carabanchel</span>, junto al colectivo
-                                <a
-                                    href="https://www.instagram.com/sync_npc/"
-                                    target="_blank"
-                                    class="hl-secondary"
-                                    >Ketapasando
-                                    <span class="link-icon" aria-hidden="true"></span></a
-                                >.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">Bandcamp</span>
-                                <span class="meta-tag">Techno</span>
-                                <span class="meta-tag">Drone</span>
-                                <span class="meta-tag">Electrónica</span>
-                                <span class="meta-tag">SYNC · EKO</span>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-name">El lado izquierdo muerto del cuerpo</div>
-                            <div class="project-alias">
-                                // Ambient · Drone · Eurorack ·
-                                <a
-                                    href="https://nullable.bandcamp.com/album/mediocres-meditaciones-modularizadas"
-                                    target="_blank"
-                                    >nullable.bandcamp.com
-                                    <span class="link-icon" aria-hidden="true"></span
-                                ></a>
-                            </div>
-                            <div class="project-desc">
-                                Proyecto musical centrado en un sonido ambient y drone,
-                                principalmente creado con diferentes módulos de Eurorack grabados en
-                                una sola toma y sin edición posterior. La ausencia de postproducción
-                                es parte del lenguaje: el error, el ruido y la deriva del sistema
-                                analógico quedan registrados tal como suceden.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">Ambient</span>
-                                <span class="meta-tag">Drone</span>
-                                <span class="meta-tag">Eurorack</span>
-                                <span class="meta-tag">Single Take</span>
-                                <span class="meta-tag">Modular</span>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-name">Xtraperlo Records</div>
-                            <div class="project-alias">
-                                // Co-fundador · Sello · 8 años ·
-                                <a href="https://xtraperlorecords.bandcamp.com/" target="_blank"
-                                    >xtraperlorecords.bandcamp.com
-                                    <span class="link-icon" aria-hidden="true"></span
-                                ></a>
-                            </div>
-                            <div class="project-desc">
-                                Sello de música electrónica co-creado y gestionado durante 8 años,
-                                especializado en subgéneros de techno duro. Editó a diferentes
-                                artistas en formato digital y vinilo. Bajo el alias
-                                <span class="hl">Null {variable}</span> —proyecto musical de
-                                nullable— se publicaron trabajos dentro del catálogo del sello. En
-                                algunas ocasiones también se encargó del diseño gráfico de las
-                                portadas de los discos editados.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">Sello</span>
-                                <span class="meta-tag">Techno Duro</span>
-                                <span class="meta-tag">Vinilo</span>
-                                <span class="meta-tag">Digital</span>
-                                <span class="meta-tag">Diseño Gráfico</span>
-                                <span class="meta-tag">8 años</span>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-name">U+0000</div>
-                            <div class="project-alias">
-                                // Techno · Noise · Distorsión ·
-                                <a href="https://soundcloud.com/youplusfourzeros" target="_blank"
-                                    >soundcloud.com/youplusfourzeros
-                                    <span class="link-icon" aria-hidden="true"></span
-                                ></a>
-                            </div>
-                            <div class="project-desc">
-                                Techno en sus variantes más post-género: distorsión estructural,
-                                degradación del sonido como lenguaje y no como accidente, ruido como
-                                arma. U+0000 opera en el punto donde el ritmo deja de ser propulsor
-                                y se convierte en residuo; loops que se comen a sí mismos, texturas
-                                que no llegan a ningún sitio porque el sitio ya no existe.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">Techno</span>
-                                <span class="meta-tag">Post-género</span>
-                                <span class="meta-tag">Distorsión</span>
-                                <span class="meta-tag">Noise</span>
-                                <span class="meta-tag">Power electronics</span>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-name">Max Tinnitus</div>
-                            <div class="project-alias">
-                                // Breakcore · Speedcore · Mashup ·
-                                <a href="https://soundcloud.com/max-tinnitus" target="_blank"
-                                    >soundcloud.com/max-tinnitus
-                                    <span class="link-icon" aria-hidden="true"></span
-                                ></a>
-                            </div>
-                            <div class="project-desc">
-                                Proyecto de sátira musical a través de géneros extremos: breakcore,
-                                speedcore y mashup. Las actuaciones en vivo son performances
-                                cargadas de comportamiento troll e interacciones absurdas con el
-                                público, donde el espectáculo y la provocación son parte del
-                                lenguaje. Con este alias se publicaron trabajos en múltiples sellos
-                                como
-                                <span class="hl">Day of the Droids</span> y
-                                <span class="hl">Hormonal VibrationZ</span>.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">Breakcore</span>
-                                <span class="meta-tag">Speedcore</span>
-                                <span class="meta-tag">Mashup</span>
-                                <span class="meta-tag">Live Performance</span>
-                                <span class="meta-tag">Sátira</span>
+                            <div class="page-footer">
+                                <span class="footer-name">ACG — Adrián Cano González</span>
+                                <span class="footer-page">02</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="page-footer">
-                        <span class="footer-name">ACG — Adrián Cano González</span>
-                        <span class="footer-page">02</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ══════════════════════════════════════════
+                    <!-- ══════════════════════════════════════════
      PAGE-CONT 3 — VIDEO
 ═══════════════════════════════════════════ -->
-            <div class="page-cont">
-                <div class="page-images" id="images-video">
-                    <div class="masonry">
-                        <ul>
-                            <li>
-                                <img src="media/img/video/color cube.jpg" alt="" loading="lazy" />
-                            </li>
-                            <li>
-                                <img
-                                    style="filter: invert(1); object-fit: contain"
-                                    src="media/img/video/jpeg_icon_MAS COMP.jpg"
-                                    alt=""
-                                    loading="lazy" />
-                            </li>
-                            <li>
-                                <img src="media/img/video/OJOS_GLITCH.jpg" alt="" loading="lazy" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="page" id="video">
-                    <div class="section-header">
-                        <span class="section-num">02 /</span>
-                        <h1 class="section-title">Video</h1>
-                        <span class="section-tag">Video Art · VJing · Audiovisual</span>
-                    </div>
-
-                    <div class="intro-box">
-                        <p>
-                            ACG opera bajo el alias <span class="hl">optikCalx</span> —
-                            <span class="hl-secondary">youtube.com/@optikcalx</span> — para toda su
-                            práctica de creación de vídeo y sesiones VJ. optikCalx es el nombre
-                            dedicado a la producción audiovisual: glitch art, video experimental y
-                            actuaciones en directo como VJ. Las piezas combinan footage analógico y
-                            digital, explorando el error, el glitch y la saturación cromática como
-                            lenguajes propios. Con más de
-                            <span class="hl">10 años de trayectoria como VJ</span>, ACG ha actuado
-                            en salas de referencia de la escena electrónica de Madrid y colabora
-                            habitualmente con el colectivo <span class="hl">Ketapasando</span> —
-                            <a href="https://ketapasando.com" target="_blank" class="hl-secondary"
-                                >ketapasando.com
-                                <span class="link-icon" aria-hidden="true"></span></a
-                            >.
-                        </p>
-                    </div>
-
-                    <div class="project-grid">
-                        <div class="project-card">
-                            <div class="project-name">
-                                VJ — Más de 10 años en la escena madrileña
-                            </div>
-                            <div class="project-alias">
-                                // optikCalx · Specka · Café La Palma · Madrid
-                            </div>
-                            <div class="project-desc">
-                                Desde hace más de una década, optikCalx construye narrativas
-                                visuales en tiempo real en algunas de las salas y festivales más
-                                activos de Madrid. Con residencias y actuaciones recurrentes en
-                                espacios como
-                                <span class="hl">Specka</span> y
-                                <span class="hl">Café La Palma</span>, el trabajo como VJ combina
-                                capas de vídeo procesado, glitch en tiempo real y síntesis visual
-                                sincronizada con la música. La última actuación como VJ fue en el
-                                festival <span class="hl">FEUDAL 2025</span>.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">VJing</span>
-                                <span class="meta-tag">Live Performance</span>
-                                <span class="meta-tag">Specka</span>
-                                <span class="meta-tag">Café La Palma</span>
-                                <span class="meta-tag">FEUDAL 2025</span>
+                    <div class="page-cont">
+                        <div class="page-images" id="images-video">
+                            <div class="masonry">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="media/img/video/color cube.jpg"
+                                            alt=""
+                                            loading="lazy" />
+                                    </li>
+                                    <li>
+                                        <img
+                                            style="filter: invert(1); object-fit: contain"
+                                            src="media/img/video/jpeg_icon_MAS COMP.jpg"
+                                            alt=""
+                                            loading="lazy" />
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="media/img/video/OJOS_GLITCH.jpg"
+                                            alt=""
+                                            loading="lazy" />
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
-                        <div class="two-col">
-                            <div class="project-card">
-                                <div class="project-name">Glitch Art</div>
-                                <div class="project-alias">// optikCalx</div>
-                                <div class="project-desc">
-                                    Piezas de video experimental que investigan la materialidad del
-                                    píxel, los artefactos de compresión y la estética del error
-                                    digital. Manipulación de canales de color, databending y
-                                    procesado de señal analógica.
+                        <div class="page" id="video">
+                            <div class="section-header">
+                                <span class="section-num">02 /</span>
+                                <h1 class="section-title">Video</h1>
+                                <span class="section-tag">Video Art · VJing · Audiovisual</span>
+                            </div>
+
+                            <div class="intro-box">
+                                <p>
+                                    ACG opera bajo el alias <span class="hl">optikCalx</span> —
+                                    <span class="hl-secondary">youtube.com/@optikcalx</span> — para
+                                    toda su práctica de creación de vídeo y sesiones VJ. optikCalx
+                                    es el nombre dedicado a la producción audiovisual: glitch art,
+                                    video experimental y actuaciones en directo como VJ. Las piezas
+                                    combinan footage analógico y digital, explorando el error, el
+                                    glitch y la saturación cromática como lenguajes propios. Con más
+                                    de <span class="hl">10 años de trayectoria como VJ</span>, ACG
+                                    ha actuado en salas de referencia de la escena electrónica de
+                                    Madrid y colabora habitualmente con el colectivo
+                                    <span class="hl">Ketapasando</span> —
+                                    <a
+                                        href="https://ketapasando.com"
+                                        target="_blank"
+                                        class="hl-secondary"
+                                        >ketapasando.com
+                                        <span class="link-icon" aria-hidden="true"></span></a
+                                    >.
+                                </p>
+                            </div>
+
+                            <div class="project-grid">
+                                <div class="project-card">
+                                    <div class="project-name">
+                                        VJ — Más de 10 años en la escena madrileña
+                                    </div>
+                                    <div class="project-alias">
+                                        // optikCalx · Specka · Café La Palma · Madrid
+                                    </div>
+                                    <div class="project-desc">
+                                        Desde hace más de una década, optikCalx construye narrativas
+                                        visuales en tiempo real en algunas de las salas y festivales
+                                        más activos de Madrid. Con residencias y actuaciones
+                                        recurrentes en espacios como
+                                        <span class="hl">Specka</span> y
+                                        <span class="hl">Café La Palma</span>, el trabajo como VJ
+                                        combina capas de vídeo procesado, glitch en tiempo real y
+                                        síntesis visual sincronizada con la música. La última
+                                        actuación como VJ fue en el festival
+                                        <span class="hl">FEUDAL 2025</span>.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">VJing</span>
+                                        <span class="meta-tag">Live Performance</span>
+                                        <span class="meta-tag">Specka</span>
+                                        <span class="meta-tag">Café La Palma</span>
+                                        <span class="meta-tag">FEUDAL 2025</span>
+                                    </div>
                                 </div>
-                                <div class="project-meta">
-                                    <span class="meta-tag">Glitch</span>
-                                    <span class="meta-tag">Video Art</span>
-                                    <span class="meta-tag">Experimental</span>
+
+                                <div class="two-col">
+                                    <div class="project-card">
+                                        <div class="project-name">Glitch Art</div>
+                                        <div class="project-alias">// optikCalx</div>
+                                        <div class="project-desc">
+                                            Piezas de video experimental que investigan la
+                                            materialidad del píxel, los artefactos de compresión y
+                                            la estética del error digital. Manipulación de canales
+                                            de color, databending y procesado de señal analógica.
+                                        </div>
+                                        <div class="project-meta">
+                                            <span class="meta-tag">Glitch</span>
+                                            <span class="meta-tag">Video Art</span>
+                                            <span class="meta-tag">Experimental</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card">
+                                        <div class="project-name">Piezas Audiovisuales</div>
+                                        <div class="project-desc">
+                                            Creaciones audiovisuales de corta y larga duración que
+                                            exploran la relación entre imagen y sonido. Trabajos que
+                                            van desde la documentación experimental hasta la ficción
+                                            especulativa.
+                                        </div>
+                                        <div class="project-meta">
+                                            <span class="meta-tag">Audiovisual</span>
+                                            <span class="meta-tag">Experimental</span>
+                                            <span class="meta-tag">Postproducción</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-card">
+                                    <div class="project-name">Ketapasando</div>
+                                    <div class="project-alias">
+                                        // Colectivo ·
+                                        <a href="https://ketapasando.com" target="_blank"
+                                            >ketapasando.com
+                                            <span class="link-icon" aria-hidden="true"></span
+                                        ></a>
+                                        ·
+                                        <a href="https://ketapasando.bandcamp.com" target="_blank"
+                                            >ketapasando.bandcamp.com
+                                            <span class="link-icon" aria-hidden="true"></span
+                                        ></a>
+                                    </div>
+                                    <div class="project-desc">
+                                        Colaboración habitual con
+                                        <span class="hl">Ketapasando</span>, colectivo y sello
+                                        audiovisual con base en Madrid que funciona como promotora,
+                                        label y motor de creación colaborativa. Sus eventos combinan
+                                        live sets, livecoding y VJ en directo, terreno natural para
+                                        la práctica audiovisual de optikCalx. Ketapasando rechaza
+                                        etiquetas fijas y opera desde la escucha sin prejuicios y la
+                                        resistencia cultural underground.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">Colectivo</span>
+                                        <span class="meta-tag">Madrid</span>
+                                        <span class="meta-tag">Colaboración</span>
+                                        <span class="meta-tag">Live A/V</span>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="project-card">
-                                <div class="project-name">Piezas Audiovisuales</div>
-                                <div class="project-desc">
-                                    Creaciones audiovisuales de corta y larga duración que exploran
-                                    la relación entre imagen y sonido. Trabajos que van desde la
-                                    documentación experimental hasta la ficción especulativa.
-                                </div>
-                                <div class="project-meta">
-                                    <span class="meta-tag">Audiovisual</span>
-                                    <span class="meta-tag">Experimental</span>
-                                    <span class="meta-tag">Postproducción</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-name">Ketapasando</div>
-                            <div class="project-alias">
-                                // Colectivo ·
-                                <a href="https://ketapasando.com" target="_blank"
-                                    >ketapasando.com
-                                    <span class="link-icon" aria-hidden="true"></span
-                                ></a>
-                                ·
-                                <a href="https://ketapasando.bandcamp.com" target="_blank"
-                                    >ketapasando.bandcamp.com
-                                    <span class="link-icon" aria-hidden="true"></span
-                                ></a>
-                            </div>
-                            <div class="project-desc">
-                                Colaboración habitual con <span class="hl">Ketapasando</span>,
-                                colectivo y sello audiovisual con base en Madrid que funciona como
-                                promotora, label y motor de creación colaborativa. Sus eventos
-                                combinan live sets, livecoding y VJ en directo, terreno natural para
-                                la práctica audiovisual de optikCalx. Ketapasando rechaza etiquetas
-                                fijas y opera desde la escucha sin prejuicios y la resistencia
-                                cultural underground.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">Colectivo</span>
-                                <span class="meta-tag">Madrid</span>
-                                <span class="meta-tag">Colaboración</span>
-                                <span class="meta-tag">Live A/V</span>
+                            <div class="page-footer">
+                                <span class="footer-name">ACG — Adrián Cano González</span>
+                                <span class="footer-page">03</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="page-footer">
-                        <span class="footer-name">ACG — Adrián Cano González</span>
-                        <span class="footer-page">03</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ══════════════════════════════════════════
+                    <!-- ══════════════════════════════════════════
      PAGE-CONT 4 — LIVECODING
 ═══════════════════════════════════════════ -->
-            <div class="page-cont">
-                <div class="page-images" id="images-livecoding"></div>
+                    <div class="page-cont">
+                        <div class="page-images" id="images-livecoding"></div>
 
-                <div class="page" id="livecoding">
-                    <div class="section-header">
-                        <span class="section-num">03 /</span>
-                        <h1 class="section-title">Livecoding</h1>
-                        <span class="section-tag"
-                            >TidalCycles · Música Algorítmica · Performance</span
-                        >
-                    </div>
-
-                    <div class="intro-box">
-                        <p>
-                            El livecoding es la práctica de componer y modificar música en tiempo
-                            real a través de código. ACG opera bajo el alias
-                            <span class="hl">R.PHLUX.D</span> para toda su práctica de creación
-                            musical como livecoder, utilizando principalmente
-                            <span class="hl">TidalCycles</span>, un lenguaje basado en Haskell
-                            diseñado para la síntesis de patrones rítmicos y melódicos. Las
-                            actuaciones son abiertas: el código es visible para el público,
-                            convirtiendo el proceso compositivo en parte del espectáculo. ACG forma
-                            parte del colectivo <span class="hl">Live Code Mad</span>, grupo de
-                            práctica, investigación y difusión del livecoding con sede en Madrid,
-                            con actividad continuada en espacios como
-                            <a
-                                href="https://www.medialab-matadero.es/en/activities/live-code-mad-group-experimentation-live-coding-medialab-prado"
-                                target="_blank"
-                                class="hl-secondary"
-                                >Medialab-Matadero
-                                <span class="link-icon" aria-hidden="true"></span></a
-                            >. En 2019 participó en la organización del
-                            <a
-                                href="https://iclc.toplap.org/2019/index.html"
-                                target="_blank"
-                                class="hl-secondary"
-                                >ICLC 2019 <span class="link-icon" aria-hidden="true"></span
-                            ></a>
-                            —International Conference on Live Coding—, el congreso de referencia
-                            mundial de la disciplina.
-                        </p>
-                    </div>
-
-                    <div class="project-grid">
-                        <div class="project-card">
-                            <div class="project-name">TidalCycles</div>
-                            <div class="project-alias">
-                                // R.PHLUX.D · Haskell · Pattern-based music
+                        <div class="page" id="livecoding">
+                            <div class="section-header">
+                                <span class="section-num">03 /</span>
+                                <h1 class="section-title">Livecoding</h1>
+                                <span class="section-tag"
+                                    >TidalCycles · Música Algorítmica · Performance</span
+                                >
                             </div>
-                            <div class="project-desc">
-                                Uso avanzado de TidalCycles para la generación de estructuras
-                                rítmicas complejas, polirritmos y transformaciones en tiempo real.
-                                Integración con SuperDirt y SuperCollider para síntesis de audio.
-                                Exploración de la notación de patrones como lenguaje poético.
+
+                            <div class="intro-box">
+                                <p>
+                                    El livecoding es la práctica de componer y modificar música en
+                                    tiempo real a través de código. ACG opera bajo el alias
+                                    <span class="hl">R.PHLUX.D</span> para toda su práctica de
+                                    creación musical como livecoder, utilizando principalmente
+                                    <span class="hl">TidalCycles</span>, un lenguaje basado en
+                                    Haskell diseñado para la síntesis de patrones rítmicos y
+                                    melódicos. Las actuaciones son abiertas: el código es visible
+                                    para el público, convirtiendo el proceso compositivo en parte
+                                    del espectáculo. ACG forma parte del colectivo
+                                    <span class="hl">Live Code Mad</span>, grupo de práctica,
+                                    investigación y difusión del livecoding con sede en Madrid, con
+                                    actividad continuada en espacios como
+                                    <a
+                                        href="https://www.medialab-matadero.es/en/activities/live-code-mad-group-experimentation-live-coding-medialab-prado"
+                                        target="_blank"
+                                        class="hl-secondary"
+                                        >Medialab-Matadero
+                                        <span class="link-icon" aria-hidden="true"></span></a
+                                    >. En 2019 participó en la organización del
+                                    <a
+                                        href="https://iclc.toplap.org/2019/index.html"
+                                        target="_blank"
+                                        class="hl-secondary"
+                                        >ICLC 2019 <span class="link-icon" aria-hidden="true"></span
+                                    ></a>
+                                    —International Conference on Live Coding—, el congreso de
+                                    referencia mundial de la disciplina.
+                                </p>
                             </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">TidalCycles</span>
-                                <span class="meta-tag">SuperCollider</span>
-                                <span class="meta-tag">Haskell</span>
-                                <span class="meta-tag">Algoritmos</span>
+
+                            <div class="project-grid">
+                                <div class="project-card">
+                                    <div class="project-name">TidalCycles</div>
+                                    <div class="project-alias">
+                                        // R.PHLUX.D · Haskell · Pattern-based music
+                                    </div>
+                                    <div class="project-desc">
+                                        Uso avanzado de TidalCycles para la generación de
+                                        estructuras rítmicas complejas, polirritmos y
+                                        transformaciones en tiempo real. Integración con SuperDirt y
+                                        SuperCollider para síntesis de audio. Exploración de la
+                                        notación de patrones como lenguaje poético.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">TidalCycles</span>
+                                        <span class="meta-tag">SuperCollider</span>
+                                        <span class="meta-tag">Haskell</span>
+                                        <span class="meta-tag">Algoritmos</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-card">
+                                    <div class="project-name">
+                                        TROBADA 2.3 — TOPLAP Barcelona @ Hangar
+                                    </div>
+                                    <div class="project-alias">
+                                        // R.PHLUX.D · Júlia Múgica · Dic 2021 ·
+                                        <a
+                                            href="youtube.com/watch?v=TZCm2rcF2Yk"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            >Video de la actuación en Youtube
+                                            <span class="link-icon" aria-hidden="true"></span
+                                        ></a>
+                                    </div>
+                                    <div class="project-desc">
+                                        Actuación en vivo bajo el alias
+                                        <span class="hl">R.PHLUX.D</span> junto a Júlia Múgica en el
+                                        marco de la serie TROBADA del colectivo
+                                        <span class="hl">TOPLAP Barcelona</span>, celebrada en
+                                        Hangar (Barcelona). TROBADA es una serie de encuentros donde
+                                        miembros de la comunidad TOPLAP realizan una performance y
+                                        explican sus métodos de creación. La actuación fue emitida
+                                        en directo y está disponible íntegramente en el canal de
+                                        YouTube de TOPLAP Barcelona.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">R.PHLUX.D</span>
+                                        <span class="meta-tag">TOPLAP Barcelona</span>
+                                        <span class="meta-tag">Hangar</span>
+                                        <span class="meta-tag">Live · Dic 2021</span>
+                                        <span class="meta-tag">YouTube</span>
+                                    </div>
+                                </div>
+
+                                <div class="two-col">
+                                    <div class="project-card">
+                                        <div class="project-name">Actuaciones en Vivo</div>
+                                        <div class="project-desc">
+                                            Sets de livecoding en eventos de la escena algorítmica,
+                                            festivales de arte digital y espacios experimentales. El
+                                            código proyectado es parte de la dramaturgia visual.
+                                            Entre los espacios y eventos:
+                                            <span class="hl">Embajada de Italia en Madrid</span>,
+                                            <span class="hl">Museo Reina Sofía</span>, festival
+                                            <span class="hl">Ithaka</span> (Medellín, España),
+                                            varios años en la feria de ciberseguridad
+                                            <span class="hl">RootedCON</span> y la
+                                            <span class="hl">Feria de Libros Mutantes</span> en La
+                                            Casa Encendida de Madrid.
+                                        </div>
+                                        <div class="project-meta">
+                                            <span class="meta-tag">Performance</span>
+                                            <span class="meta-tag">Livecoding</span>
+                                            <span class="meta-tag">Algorave</span>
+                                            <span class="meta-tag">Reina Sofía</span>
+                                            <span class="meta-tag">RootedCON</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card">
+                                        <div class="project-name">Talleres y Difusión</div>
+                                        <div class="project-desc">
+                                            Pertenecer a
+                                            <span class="hl">Live Code Mad</span> implica compartir
+                                            la práctica: dar talleres, abrir el proceso y acercar el
+                                            livecoding a quien no lo conoce. Talleres impartidos en
+                                            el <span class="hl">Museo Reina Sofía</span>, en los
+                                            ciclos <span class="hl">Telaraña</span> de
+                                            <span class="hl">Centro Centro</span> y en la
+                                            <span class="hl">CSO EKO</span> de Carabanchel.
+                                        </div>
+                                        <div class="project-meta">
+                                            <span class="meta-tag">Taller</span>
+                                            <span class="meta-tag">Reina Sofía</span>
+                                            <span class="meta-tag">Centro Centro</span>
+                                            <span class="meta-tag">CSO EKO</span>
+                                            <span class="meta-tag">Open Source</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-card">
+                                    <div class="project-name">Livecoding A/V</div>
+                                    <div class="project-alias">
+                                        // Código como imagen y sonido simultáneo
+                                    </div>
+                                    <div class="project-desc">
+                                        Combinación de livecoding musical con generación gráfica en
+                                        tiempo real. Uso de Hydra, p5.js o patches propios para
+                                        crear visuales procedurales sincronizados con el audio
+                                        generado por TidalCycles. La pantalla deja de ser decorado y
+                                        pasa a ser instrumento.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">Hydra</span>
+                                        <span class="meta-tag">Visual Livecoding</span>
+                                        <span class="meta-tag">p5.js</span>
+                                        <span class="meta-tag">A/V</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="page-footer">
+                                <span class="footer-name">ACG — Adrián Cano González</span>
+                                <span class="footer-page">04</span>
                             </div>
                         </div>
-
-                        <div class="project-card">
-                            <div class="project-name">TROBADA 2.3 — TOPLAP Barcelona @ Hangar</div>
-                            <div class="project-alias">
-                                // R.PHLUX.D · Júlia Múgica · Dic 2021 ·
-                                <a
-                                    href="youtube.com/watch?v=TZCm2rcF2Yk"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >Video de la actuación en Youtube
-                                    <span class="link-icon" aria-hidden="true"></span
-                                ></a>
-                            </div>
-                            <div class="project-desc">
-                                Actuación en vivo bajo el alias
-                                <span class="hl">R.PHLUX.D</span> junto a Júlia Múgica en el marco
-                                de la serie TROBADA del colectivo
-                                <span class="hl">TOPLAP Barcelona</span>, celebrada en Hangar
-                                (Barcelona). TROBADA es una serie de encuentros donde miembros de la
-                                comunidad TOPLAP realizan una performance y explican sus métodos de
-                                creación. La actuación fue emitida en directo y está disponible
-                                íntegramente en el canal de YouTube de TOPLAP Barcelona.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">R.PHLUX.D</span>
-                                <span class="meta-tag">TOPLAP Barcelona</span>
-                                <span class="meta-tag">Hangar</span>
-                                <span class="meta-tag">Live · Dic 2021</span>
-                                <span class="meta-tag">YouTube</span>
-                            </div>
-                        </div>
-
-                        <div class="two-col">
-                            <div class="project-card">
-                                <div class="project-name">Actuaciones en Vivo</div>
-                                <div class="project-desc">
-                                    Sets de livecoding en eventos de la escena algorítmica,
-                                    festivales de arte digital y espacios experimentales. El código
-                                    proyectado es parte de la dramaturgia visual. Entre los espacios
-                                    y eventos: <span class="hl">Embajada de Italia en Madrid</span>,
-                                    <span class="hl">Museo Reina Sofía</span>, festival
-                                    <span class="hl">Ithaka</span> (Medellín, España), varios años
-                                    en la feria de ciberseguridad
-                                    <span class="hl">RootedCON</span> y la
-                                    <span class="hl">Feria de Libros Mutantes</span> en La Casa
-                                    Encendida de Madrid.
-                                </div>
-                                <div class="project-meta">
-                                    <span class="meta-tag">Performance</span>
-                                    <span class="meta-tag">Livecoding</span>
-                                    <span class="meta-tag">Algorave</span>
-                                    <span class="meta-tag">Reina Sofía</span>
-                                    <span class="meta-tag">RootedCON</span>
-                                </div>
-                            </div>
-
-                            <div class="project-card">
-                                <div class="project-name">Talleres y Difusión</div>
-                                <div class="project-desc">
-                                    Pertenecer a <span class="hl">Live Code Mad</span> implica
-                                    compartir la práctica: dar talleres, abrir el proceso y acercar
-                                    el livecoding a quien no lo conoce. Talleres impartidos en el
-                                    <span class="hl">Museo Reina Sofía</span>, en los ciclos
-                                    <span class="hl">Telaraña</span> de
-                                    <span class="hl">Centro Centro</span> y en la
-                                    <span class="hl">CSO EKO</span> de Carabanchel.
-                                </div>
-                                <div class="project-meta">
-                                    <span class="meta-tag">Taller</span>
-                                    <span class="meta-tag">Reina Sofía</span>
-                                    <span class="meta-tag">Centro Centro</span>
-                                    <span class="meta-tag">CSO EKO</span>
-                                    <span class="meta-tag">Open Source</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-name">Livecoding A/V</div>
-                            <div class="project-alias">
-                                // Código como imagen y sonido simultáneo
-                            </div>
-                            <div class="project-desc">
-                                Combinación de livecoding musical con generación gráfica en tiempo
-                                real. Uso de Hydra, p5.js o patches propios para crear visuales
-                                procedurales sincronizados con el audio generado por TidalCycles. La
-                                pantalla deja de ser decorado y pasa a ser instrumento.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">Hydra</span>
-                                <span class="meta-tag">Visual Livecoding</span>
-                                <span class="meta-tag">p5.js</span>
-                                <span class="meta-tag">A/V</span>
-                            </div>
-                        </div>
                     </div>
 
-                    <div class="page-footer">
-                        <span class="footer-name">ACG — Adrián Cano González</span>
-                        <span class="footer-page">04</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ══════════════════════════════════════════
+                    <!-- ══════════════════════════════════════════
      PAGE-CONT 5 — DISEÑO WEB
 ═══════════════════════════════════════════ -->
-            <div class="page-cont">
-                <div class="page-images" id="images-web">
-                    <div class="masonry">
-                        <ul>
-                            <li>
-                                <img src="media/img/web/t37-web.png" alt="Web T37" loading="lazy" />
-                            </li>
-                            <li>
-                                <img
-                                    src="media/img/web/elias-web.png"
-                                    alt="Web Elias Merino"
-                                    loading="lazy" />
-                            </li>
-                            <li>
-                                <img
-                                    src="media/img/web/jana-web.png"
-                                    alt="Web Jana Domínguez"
-                                    loading="lazy" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="page" id="web">
-                    <div class="section-header">
-                        <span class="section-num">04 /</span>
-                        <h1 class="section-title">Diseño Web</h1>
-                        <span class="section-tag">Net Art · Front-End · Identidad Digital</span>
-                    </div>
-
-                    <div class="intro-box">
-                        <p>
-                            El diseño web es para ACG tanto un medio de expresión artística como una
-                            herramienta de construcción de identidad. Se trabaja desde la estética
-                            de la red, el net art y la contracultura digital, creando sitios que
-                            cuestionan las convenciones de la interfaz. El código es material.
-                        </p>
-                    </div>
-
-                    <div class="project-grid">
-                        <div class="project-card">
-                            <div class="project-name">ICLC 2019</div>
-                            <div class="project-alias">
-                                // Festival · Conferencia Internacional · Madrid ·
-                                <a href="https://iclc.toplap.org/2019/index.html" target="_blank"
-                                    >iclc.toplap.org/2019
-                                    <span class="link-icon" aria-hidden="true"></span
-                                ></a>
-                            </div>
-                            <div class="project-desc">
-                                Diseño y desarrollo del sitio web oficial de la
-                                <span class="hl">International Conference on Live Coding 2019</span
-                                >, celebrada en Madrid. La web funcionó como plataforma de
-                                comunicación del congreso: programa, ponentes, llamada a propuestas
-                                y acceso a los contenidos del evento. Diseño orientado a la
-                                comunidad técnica y artística del livecoding, con una estética
-                                coherente con los valores de la práctica —abierta, experimental,
-                                legible.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">HTML/CSS</span>
-                                <span class="meta-tag">JavaScript</span>
-                                <span class="meta-tag">Festival</span>
-                                <span class="meta-tag">TOPLAP</span>
-                                <span class="meta-tag">2019</span>
+                    <div class="page-cont">
+                        <div class="page-images" id="images-web">
+                            <div class="masonry">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="media/img/web/t37-web.png"
+                                            alt="Web T37"
+                                            loading="lazy" />
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="media/img/web/elias-web.png"
+                                            alt="Web Elias Merino"
+                                            loading="lazy" />
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="media/img/web/jana-web.png"
+                                            alt="Web Jana Domínguez"
+                                            loading="lazy" />
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
-                        <div class="project-card">
-                            <div class="project-name">T37 — Asociación Artística</div>
-                            <div class="project-alias">
-                                // Colectivo · Madrid ·
-                                <a href="https://t-37.xyz/" target="_blank"
-                                    >t-37.xyz <span class="link-icon" aria-hidden="true"></span
-                                ></a>
-                            </div>
-                            <div class="project-desc">
-                                Diseño y desarrollo de la web del colectivo
-                                <span class="hl">T37</span>, espacio de creación audiovisual,
-                                eventos y producción experimental con base en Madrid. El sitio
-                                refleja la identidad del colectivo: oscura, directa, sin concesiones
-                                decorativas. Arquitectura simple que prioriza el contenido y la
-                                agenda de actividades sobre cualquier artificio visual.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">HTML/CSS</span>
-                                <span class="meta-tag">JavaScript</span>
-                                <span class="meta-tag">Colectivo</span>
-                                <span class="meta-tag">Identidad</span>
-                            </div>
-                        </div>
-
-                        <div class="two-col">
-                            <div class="project-card">
-                                <div class="project-name">Elias Merino</div>
-                                <div class="project-alias">
-                                    // Artista · Portfolio ·
-                                    <a href="https://eliasmerino.com/" target="_blank"
-                                        >eliasmerino.com
-                                        <span class="link-icon" aria-hidden="true"></span
-                                    ></a>
-                                </div>
-                                <div class="project-desc">
-                                    Portfolio web para el artista
-                                    <span class="hl">Elias Merino</span>. El diseño parte de la obra
-                                    para construir una presencia digital que no compite con el
-                                    trabajo sino que lo enmarca: tipografía contenida, espacio en
-                                    blanco como decisión y navegación que no distrae.
-                                </div>
-                                <div class="project-meta">
-                                    <span class="meta-tag">Portfolio</span>
-                                    <span class="meta-tag">Artista</span>
-                                    <span class="meta-tag">Identidad</span>
-                                </div>
+                        <div class="page" id="web">
+                            <div class="section-header">
+                                <span class="section-num">04 /</span>
+                                <h1 class="section-title">Diseño Web</h1>
+                                <span class="section-tag"
+                                    >Net Art · Front-End · Identidad Digital</span
+                                >
                             </div>
 
-                            <div class="project-card">
-                                <div class="project-name">Jana Domínguez</div>
-                                <div class="project-alias">
-                                    // Ilustradora · Portfolio ·
-                                    <a href="https://janadominguez.cargo.site/" target="_blank"
-                                        >janadominguez.cargo.site
-                                        <span class="link-icon" aria-hidden="true"></span
-                                    ></a>
-                                </div>
-                                <div class="project-desc">
-                                    Presencia digital para la ilustradora
-                                    <span class="hl">Jana Domínguez</span>. El sitio organiza y
-                                    presenta su obra con una disposición que respeta los ritmos
-                                    visuales de la ilustración: imagen protagonista, jerarquía clara
-                                    y una navegación que invita a recorrer el trabajo sin
-                                    fricciones.
-                                </div>
-                                <div class="project-meta">
-                                    <span class="meta-tag">Portfolio</span>
-                                    <span class="meta-tag">Ilustración</span>
-                                    <span class="meta-tag">Cargo</span>
-                                </div>
+                            <div class="intro-box">
+                                <p>
+                                    El diseño web es para ACG tanto un medio de expresión artística
+                                    como una herramienta de construcción de identidad. Se trabaja
+                                    desde la estética de la red, el net art y la contracultura
+                                    digital, creando sitios que cuestionan las convenciones de la
+                                    interfaz. El código es material.
+                                </p>
                             </div>
-                        </div>
 
-                        <div class="project-card">
-                            <div class="project-name">Diseño de Interfaz y Tipografía Web</div>
-                            <div class="project-desc">
-                                Trabajo con tipografía variable, sistemas de diseño minimalistas y
-                                estéticas que beben del cyberpunk, el brutalism web y el terminal
-                                aesthetic. Cada proyecto se trata como un sistema visual coherente
-                                que no necesita plantillas.
+                            <div class="project-grid">
+                                <div class="project-card">
+                                    <div class="project-name">ICLC 2019</div>
+                                    <div class="project-alias">
+                                        // Festival · Conferencia Internacional · Madrid ·
+                                        <a
+                                            href="https://iclc.toplap.org/2019/index.html"
+                                            target="_blank"
+                                            >iclc.toplap.org/2019
+                                            <span class="link-icon" aria-hidden="true"></span
+                                        ></a>
+                                    </div>
+                                    <div class="project-desc">
+                                        Diseño y desarrollo del sitio web oficial de la
+                                        <span class="hl"
+                                            >International Conference on Live Coding 2019</span
+                                        >, celebrada en Madrid. La web funcionó como plataforma de
+                                        comunicación del congreso: programa, ponentes, llamada a
+                                        propuestas y acceso a los contenidos del evento. Diseño
+                                        orientado a la comunidad técnica y artística del livecoding,
+                                        con una estética coherente con los valores de la práctica
+                                        —abierta, experimental, legible.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">HTML/CSS</span>
+                                        <span class="meta-tag">JavaScript</span>
+                                        <span class="meta-tag">Festival</span>
+                                        <span class="meta-tag">TOPLAP</span>
+                                        <span class="meta-tag">2019</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-card">
+                                    <div class="project-name">T37 — Asociación Artística</div>
+                                    <div class="project-alias">
+                                        // Colectivo · Madrid ·
+                                        <a href="https://t-37.xyz/" target="_blank"
+                                            >t-37.xyz
+                                            <span class="link-icon" aria-hidden="true"></span
+                                        ></a>
+                                    </div>
+                                    <div class="project-desc">
+                                        Diseño y desarrollo de la web del colectivo
+                                        <span class="hl">T37</span>, espacio de creación
+                                        audiovisual, eventos y producción experimental con base en
+                                        Madrid. El sitio refleja la identidad del colectivo: oscura,
+                                        directa, sin concesiones decorativas. Arquitectura simple
+                                        que prioriza el contenido y la agenda de actividades sobre
+                                        cualquier artificio visual.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">HTML/CSS</span>
+                                        <span class="meta-tag">JavaScript</span>
+                                        <span class="meta-tag">Colectivo</span>
+                                        <span class="meta-tag">Identidad</span>
+                                    </div>
+                                </div>
+
+                                <div class="two-col">
+                                    <div class="project-card">
+                                        <div class="project-name">Elias Merino</div>
+                                        <div class="project-alias">
+                                            // Artista · Portfolio ·
+                                            <a href="https://eliasmerino.com/" target="_blank"
+                                                >eliasmerino.com
+                                                <span class="link-icon" aria-hidden="true"></span
+                                            ></a>
+                                        </div>
+                                        <div class="project-desc">
+                                            Portfolio web para el artista
+                                            <span class="hl">Elias Merino</span>. El diseño parte de
+                                            la obra para construir una presencia digital que no
+                                            compite con el trabajo sino que lo enmarca: tipografía
+                                            contenida, espacio en blanco como decisión y navegación
+                                            que no distrae.
+                                        </div>
+                                        <div class="project-meta">
+                                            <span class="meta-tag">Portfolio</span>
+                                            <span class="meta-tag">Artista</span>
+                                            <span class="meta-tag">Identidad</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card">
+                                        <div class="project-name">Jana Domínguez</div>
+                                        <div class="project-alias">
+                                            // Ilustradora · Portfolio ·
+                                            <a
+                                                href="https://janadominguez.cargo.site/"
+                                                target="_blank"
+                                                >janadominguez.cargo.site
+                                                <span class="link-icon" aria-hidden="true"></span
+                                            ></a>
+                                        </div>
+                                        <div class="project-desc">
+                                            Presencia digital para la ilustradora
+                                            <span class="hl">Jana Domínguez</span>. El sitio
+                                            organiza y presenta su obra con una disposición que
+                                            respeta los ritmos visuales de la ilustración: imagen
+                                            protagonista, jerarquía clara y una navegación que
+                                            invita a recorrer el trabajo sin fricciones.
+                                        </div>
+                                        <div class="project-meta">
+                                            <span class="meta-tag">Portfolio</span>
+                                            <span class="meta-tag">Ilustración</span>
+                                            <span class="meta-tag">Cargo</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-card">
+                                    <div class="project-name">
+                                        Diseño de Interfaz y Tipografía Web
+                                    </div>
+                                    <div class="project-desc">
+                                        Trabajo con tipografía variable, sistemas de diseño
+                                        minimalistas y estéticas que beben del cyberpunk, el
+                                        brutalism web y el terminal aesthetic. Cada proyecto se
+                                        trata como un sistema visual coherente que no necesita
+                                        plantillas.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">UI/UX</span>
+                                        <span class="meta-tag">Tipografía</span>
+                                        <span class="meta-tag">Brutalism</span>
+                                        <span class="meta-tag">Variable Fonts</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">UI/UX</span>
-                                <span class="meta-tag">Tipografía</span>
-                                <span class="meta-tag">Brutalism</span>
-                                <span class="meta-tag">Variable Fonts</span>
+
+                            <div class="page-footer">
+                                <span class="footer-name">ACG — Adrián Cano González</span>
+                                <span class="footer-page">05</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="page-footer">
-                        <span class="footer-name">ACG — Adrián Cano González</span>
-                        <span class="footer-page">05</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ══════════════════════════════════════════
+                    <!-- ══════════════════════════════════════════
      PAGE-CONT 6 — T37
 ═══════════════════════════════════════════ -->
-            <div class="page-cont">
-                <div class="page-images" id="images-t37"></div>
+                    <div class="page-cont">
+                        <div class="page-images" id="images-t37"></div>
 
-                <div class="page" id="t37">
-                    <div class="section-header">
-                        <span class="section-num">05 /</span>
-                        <h1 class="section-title">T37</h1>
-                        <span class="section-tag">Asociación Cultural · DIY · Madrid</span>
-                    </div>
+                        <div class="page" id="t37">
+                            <div class="section-header">
+                                <span class="section-num">05 /</span>
+                                <h1 class="section-title">T37</h1>
+                                <span class="section-tag">Asociación Cultural · DIY · Madrid</span>
+                            </div>
 
-                    <div class="intro-box">
-                        <p>
-                            T37 es una asociación cultural con una ética de trabajo
-                            <span class="hl">DIY</span> (Do It Yourself) y una vocación de
-                            comunidad. Desde T37 se organizan y producen eventos, exposiciones,
-                            talleres y proyectos que conectan a artistas, técnicos y público
-                            interesado en las intersecciones entre arte, tecnología y cultura
-                            popular. ACG es miembro activo y ha participado en el diseño, la
-                            producción y la gestión de múltiples proyectos bajo este paraguas.
-                        </p>
-                    </div>
+                            <div class="intro-box">
+                                <p>
+                                    T37 es una asociación cultural con una ética de trabajo
+                                    <span class="hl">DIY</span> (Do It Yourself) y una vocación de
+                                    comunidad. Desde T37 se organizan y producen eventos,
+                                    exposiciones, talleres y proyectos que conectan a artistas,
+                                    técnicos y público interesado en las intersecciones entre arte,
+                                    tecnología y cultura popular. ACG es miembro activo y ha
+                                    participado en el diseño, la producción y la gestión de
+                                    múltiples proyectos bajo este paraguas.
+                                </p>
+                            </div>
 
-                    <div class="feature-card">
-                        <div class="feature-card-label">
-                            // Asociación Cultural · Madrid ·
-                            <a href="https://t-37.xyz/" target="_blank"
-                                >t-37.xyz <span class="link-icon" aria-hidden="true"></span
-                            ></a>
-                        </div>
-                        <div class="feature-card-title">T37 — Cultura, Tecnología y Comunidad</div>
-                        <div class="feature-card-body">
-                            T37 nace de la necesidad de crear espacios propios para la cultura
-                            experimental y las prácticas artísticas no comerciales. Funciona como
-                            plataforma para la autogestión cultural, donde los propios artistas
-                            definen los formatos y los contenidos. La estructura horizontal y la
-                            voluntad DIY permiten respuestas ágiles a las necesidades de la escena.
-                        </div>
-                        <div class="inline-chips">
-                            <span class="chip">Autogestión</span>
-                            <span class="chip">Arte Experimental</span>
-                            <span class="chip">Comunidad</span>
-                            <span class="chip">Madrid</span>
-                        </div>
-                    </div>
-
-                    <div class="project-grid">
-                        <div class="two-col">
-                            <div class="project-card">
-                                <div class="project-name">Eventos y Programación</div>
-                                <div class="project-desc">
-                                    Organización de conciertos, actuaciones en vivo, sesiones de
-                                    livecoding y eventos audiovisuales. Curaduría de programaciones
-                                    que priorizan la experimentación y la diversidad de lenguajes
-                                    artísticos.
+                            <div class="feature-card">
+                                <div class="feature-card-label">
+                                    // Asociación Cultural · Madrid ·
+                                    <a href="https://t-37.xyz/" target="_blank"
+                                        >t-37.xyz <span class="link-icon" aria-hidden="true"></span
+                                    ></a>
                                 </div>
-                                <div class="project-meta">
-                                    <span class="meta-tag">Programación</span>
-                                    <span class="meta-tag">Curatoría</span>
-                                    <span class="meta-tag">Evento</span>
+                                <div class="feature-card-title">
+                                    T37 — Cultura, Tecnología y Comunidad
+                                </div>
+                                <div class="feature-card-body">
+                                    T37 nace de la necesidad de crear espacios propios para la
+                                    cultura experimental y las prácticas artísticas no comerciales.
+                                    Funciona como plataforma para la autogestión cultural, donde los
+                                    propios artistas definen los formatos y los contenidos. La
+                                    estructura horizontal y la voluntad DIY permiten respuestas
+                                    ágiles a las necesidades de la escena.
+                                </div>
+                                <div class="inline-chips">
+                                    <span class="chip">Autogestión</span>
+                                    <span class="chip">Arte Experimental</span>
+                                    <span class="chip">Comunidad</span>
+                                    <span class="chip">Madrid</span>
                                 </div>
                             </div>
 
-                            <div class="project-card">
-                                <div class="project-name">Talleres y Formación</div>
-                                <div class="project-desc">
-                                    Talleres de tecnología, música, imagen y cultura digital
-                                    dirigidos a personas sin acceso a formación especializada.
-                                    Énfasis en el aprendizaje horizontal y la transferencia de
-                                    conocimiento.
-                                </div>
-                                <div class="project-meta">
-                                    <span class="meta-tag">Taller</span>
-                                    <span class="meta-tag">Formación</span>
-                                    <span class="meta-tag">Open Knowledge</span>
-                                </div>
-                            </div>
-                        </div>
+                            <div class="project-grid">
+                                <div class="two-col">
+                                    <div class="project-card">
+                                        <div class="project-name">Eventos y Programación</div>
+                                        <div class="project-desc">
+                                            Organización de conciertos, actuaciones en vivo,
+                                            sesiones de livecoding y eventos audiovisuales.
+                                            Curaduría de programaciones que priorizan la
+                                            experimentación y la diversidad de lenguajes artísticos.
+                                        </div>
+                                        <div class="project-meta">
+                                            <span class="meta-tag">Programación</span>
+                                            <span class="meta-tag">Curatoría</span>
+                                            <span class="meta-tag">Evento</span>
+                                        </div>
+                                    </div>
 
-                        <div class="project-card">
-                            <div class="project-name">Producción y Gestión Cultural</div>
-                            <div class="project-desc">
-                                Participación en la producción ejecutiva de proyectos: coordinación
-                                técnica, comunicación, diseño de materiales gráficos y web, gestión
-                                de espacios y relación con instituciones. El trabajo en T37 abarca
-                                todas las capas de la producción cultural independiente, desde la
-                                idea hasta la difusión.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">Producción</span>
-                                <span class="meta-tag">Gestión</span>
-                                <span class="meta-tag">Diseño Gráfico</span>
-                                <span class="meta-tag">Comunicación</span>
-                            </div>
-                        </div>
+                                    <div class="project-card">
+                                        <div class="project-name">Talleres y Formación</div>
+                                        <div class="project-desc">
+                                            Talleres de tecnología, música, imagen y cultura digital
+                                            dirigidos a personas sin acceso a formación
+                                            especializada. Énfasis en el aprendizaje horizontal y la
+                                            transferencia de conocimiento.
+                                        </div>
+                                        <div class="project-meta">
+                                            <span class="meta-tag">Taller</span>
+                                            <span class="meta-tag">Formación</span>
+                                            <span class="meta-tag">Open Knowledge</span>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <div class="project-card">
-                            <div class="project-name">SIMULACRA</div>
-                            <div class="project-alias">
-                                // Streaming · Música Electrónica · Co-creador ·
-                                <a href="https://www.twitch.tv/ttreintaysiete" target="_blank"
-                                    >twitch.tv/ttreintaysiete
-                                    <span class="link-icon" aria-hidden="true"></span
-                                ></a>
-                                ·
-                                <a href="https://www.instagram.com/tetreintaysiete/" target="_blank"
-                                    >@tetreintaysiete
-                                    <span class="link-icon" aria-hidden="true"></span
-                                ></a>
+                                <div class="project-card">
+                                    <div class="project-name">Producción y Gestión Cultural</div>
+                                    <div class="project-desc">
+                                        Participación en la producción ejecutiva de proyectos:
+                                        coordinación técnica, comunicación, diseño de materiales
+                                        gráficos y web, gestión de espacios y relación con
+                                        instituciones. El trabajo en T37 abarca todas las capas de
+                                        la producción cultural independiente, desde la idea hasta la
+                                        difusión.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">Producción</span>
+                                        <span class="meta-tag">Gestión</span>
+                                        <span class="meta-tag">Diseño Gráfico</span>
+                                        <span class="meta-tag">Comunicación</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-card">
+                                    <div class="project-name">SIMULACRA</div>
+                                    <div class="project-alias">
+                                        // Streaming · Música Electrónica · Co-creador ·
+                                        <a
+                                            href="https://www.twitch.tv/ttreintaysiete"
+                                            target="_blank"
+                                            >twitch.tv/ttreintaysiete
+                                            <span class="link-icon" aria-hidden="true"></span
+                                        ></a>
+                                        ·
+                                        <a
+                                            href="https://www.instagram.com/tetreintaysiete/"
+                                            target="_blank"
+                                            >@tetreintaysiete
+                                            <span class="link-icon" aria-hidden="true"></span
+                                        ></a>
+                                    </div>
+                                    <div class="project-desc">
+                                        ACG es co-creador y parte de la organización habitual de
+                                        <span class="hl">SIMULACRA</span>, el streaming de música
+                                        electrónica de T37 emitido en directo desde el espacio. Una
+                                        apuesta por la música electrónica no convencional y no
+                                        comercial: sin géneros fijos, sin lógica de mercado, con lxs
+                                        artistas más variados e interesantes de la escena local y,
+                                        en ocasiones, de la escena nacional e internacional.
+                                        SIMULACRA es tanto un escaparate para proyectos que no
+                                        tienen cabida en los circuitos habituales como un documento
+                                        en tiempo real de lo que ocurre en T37 —un archivo vivo de
+                                        la contracultura electrónica madrileña.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">Co-creador</span>
+                                        <span class="meta-tag">Streaming</span>
+                                        <span class="meta-tag">Twitch</span>
+                                        <span class="meta-tag">Electrónica</span>
+                                        <span class="meta-tag">DIY</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="project-desc">
-                                ACG es co-creador y parte de la organización habitual de
-                                <span class="hl">SIMULACRA</span>, el streaming de música
-                                electrónica de T37 emitido en directo desde el espacio. Una apuesta
-                                por la música electrónica no convencional y no comercial: sin
-                                géneros fijos, sin lógica de mercado, con lxs artistas más variados
-                                e interesantes de la escena local y, en ocasiones, de la escena
-                                nacional e internacional. SIMULACRA es tanto un escaparate para
-                                proyectos que no tienen cabida en los circuitos habituales como un
-                                documento en tiempo real de lo que ocurre en T37 —un archivo vivo de
-                                la contracultura electrónica madrileña.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">Co-creador</span>
-                                <span class="meta-tag">Streaming</span>
-                                <span class="meta-tag">Twitch</span>
-                                <span class="meta-tag">Electrónica</span>
-                                <span class="meta-tag">DIY</span>
+
+                            <div class="page-footer">
+                                <span class="footer-name">ACG — Adrián Cano González</span>
+                                <span class="footer-page">06</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="page-footer">
-                        <span class="footer-name">ACG — Adrián Cano González</span>
-                        <span class="footer-page">06</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ══════════════════════════════════════════
+                    <!-- ══════════════════════════════════════════
      PAGE-CONT 7 — RADIO
 ═══════════════════════════════════════════ -->
-            <div class="page-cont">
-                <div class="page-images" id="images-radio">
-                    <div class="masonry">
-                        <ul>
-                            <li>
-                                <img src="media/img/radio/circuit.jpg" alt="" loading="lazy" />
-                            </li>
-                            <li>
-                                <img src="media/img/radio/spiral.png" alt="" loading="lazy" />
-                            </li>
-                            <li>
-                                <img src="media/img/radio/wot.jpg" alt="" loading="lazy" />
-                            </li>
-                            <li>
-                                <img src="media/img/radio/image.webp" alt="" loading="lazy" />
-                            </li>
-                            <li>
-                                <img
-                                    src="media/img/radio/texture_blanck.gif"
-                                    alt=""
-                                    loading="lazy" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="page" id="radio">
-                    <div class="section-header">
-                        <span class="section-num">06 /</span>
-                        <h1 class="section-title">Radio</h1>
-                        <span class="section-tag">Post Apocalipsis Nau · Radio Vallekas</span>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-card-label">
-                            // Programa de Radio · Radio Vallekas · Madrid ·
-                            <a href="https://elsaltodiario.com/post-apocalipsis-nau" target="_blank"
-                                >elsaltodiario.com/post-apocalipsis-nau
-                                <span class="link-icon" aria-hidden="true"></span
-                            ></a>
+                    <div class="page-cont">
+                        <div class="page-images" id="images-radio">
+                            <div class="masonry">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="media/img/radio/circuit.jpg"
+                                            alt=""
+                                            loading="lazy" />
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="media/img/radio/spiral.png"
+                                            alt=""
+                                            loading="lazy" />
+                                    </li>
+                                    <li>
+                                        <img src="media/img/radio/wot.jpg" alt="" loading="lazy" />
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="media/img/radio/image.webp"
+                                            alt=""
+                                            loading="lazy" />
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="media/img/radio/texture_blanck.gif"
+                                            alt=""
+                                            loading="lazy" />
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="feature-card-title">Post Apocalipsis Nau</div>
-                        <div class="feature-card-body">
-                            Post Apocalipsis Nau es un programa de radio que ACG co-creó y
-                            co-presentó en <span class="hl">Radio Vallekas</span>, emisora
-                            comunitaria y autogestionada del barrio de Vallecas en Madrid. El
-                            programa nació de la voluntad de crear un espacio radiofónico que
-                            explorase las músicas experimentales, el arte sonoro y la cultura
-                            digital desde una perspectiva crítica y accesible.<br /><br />
-                            Cada emisión funcionaba como un archivo sonoro vivo: mezcla de música
-                            poco conocida, entrevistas con artistas locales e internacionales,
-                            grabaciones de campo, performances sonoras y reflexiones sobre
-                            tecnología y cultura contemporánea. El nombre hace referencia a una
-                            visión irónica y esperanzadora del presente tecnológico.
-                        </div>
-                        <div class="inline-chips">
-                            <span class="chip">Radio Comunitaria</span>
-                            <span class="chip">Vallecas</span>
-                            <span class="chip">Experimental</span>
-                            <span class="chip">Audio Art</span>
-                            <span class="chip">Entrevistas</span>
-                            <span class="chip">Autogestión</span>
-                        </div>
-                    </div>
 
-                    <div class="project-grid">
-                        <div class="two-col">
-                            <div class="project-card">
-                                <div class="project-name">Formato y Contenido</div>
-                                <div class="project-desc">
-                                    Programa de duración variable con estructura libre. Música
-                                    experimental, noise, ambient, electrónica de vanguardia y
-                                    géneros inclasificables. Secciones de archivo, noticias
-                                    culturales y espacio para la escucha profunda.
+                        <div class="page" id="radio">
+                            <div class="section-header">
+                                <span class="section-num">06 /</span>
+                                <h1 class="section-title">Radio</h1>
+                                <span class="section-tag"
+                                    >Post Apocalipsis Nau · Radio Vallekas</span
+                                >
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-card-label">
+                                    // Programa de Radio · Radio Vallekas · Madrid ·
+                                    <a
+                                        href="https://elsaltodiario.com/post-apocalipsis-nau"
+                                        target="_blank"
+                                        >elsaltodiario.com/post-apocalipsis-nau
+                                        <span class="link-icon" aria-hidden="true"></span
+                                    ></a>
                                 </div>
-                                <div class="project-meta">
-                                    <span class="meta-tag">Música Experimental</span>
-                                    <span class="meta-tag">Ambient</span>
-                                    <span class="meta-tag">Noise</span>
+                                <div class="feature-card-title">Post Apocalipsis Nau</div>
+                                <div class="feature-card-body">
+                                    Post Apocalipsis Nau es un programa de radio que ACG co-creó y
+                                    co-presentó en <span class="hl">Radio Vallekas</span>, emisora
+                                    comunitaria y autogestionada del barrio de Vallecas en Madrid.
+                                    El programa nació de la voluntad de crear un espacio radiofónico
+                                    que explorase las músicas experimentales, el arte sonoro y la
+                                    cultura digital desde una perspectiva crítica y accesible.<br /><br />
+                                    Cada emisión funcionaba como un archivo sonoro vivo: mezcla de
+                                    música poco conocida, entrevistas con artistas locales e
+                                    internacionales, grabaciones de campo, performances sonoras y
+                                    reflexiones sobre tecnología y cultura contemporánea. El nombre
+                                    hace referencia a una visión irónica y esperanzadora del
+                                    presente tecnológico.
+                                </div>
+                                <div class="inline-chips">
+                                    <span class="chip">Radio Comunitaria</span>
+                                    <span class="chip">Vallecas</span>
+                                    <span class="chip">Experimental</span>
+                                    <span class="chip">Audio Art</span>
+                                    <span class="chip">Entrevistas</span>
+                                    <span class="chip">Autogestión</span>
                                 </div>
                             </div>
 
-                            <div class="project-card">
-                                <div class="project-name">Radio Comunitaria</div>
-                                <div class="project-desc">
-                                    Radio Vallekas es un medio comunitario y sin ánimo de lucro que
-                                    opera desde Vallecas. Post Apocalipsis Nau se integra en ese
-                                    ecosistema de medios alternativos con una voluntad de servicio
-                                    público y contracultura.
-                                </div>
-                                <div class="project-meta">
-                                    <span class="meta-tag">Medios Alternativos</span>
-                                    <span class="meta-tag">Comunidad</span>
-                                    <span class="meta-tag">No Comercial</span>
-                                </div>
-                            </div>
-                        </div>
+                            <div class="project-grid">
+                                <div class="two-col">
+                                    <div class="project-card">
+                                        <div class="project-name">Formato y Contenido</div>
+                                        <div class="project-desc">
+                                            Programa de duración variable con estructura libre.
+                                            Música experimental, noise, ambient, electrónica de
+                                            vanguardia y géneros inclasificables. Secciones de
+                                            archivo, noticias culturales y espacio para la escucha
+                                            profunda.
+                                        </div>
+                                        <div class="project-meta">
+                                            <span class="meta-tag">Música Experimental</span>
+                                            <span class="meta-tag">Ambient</span>
+                                            <span class="meta-tag">Noise</span>
+                                        </div>
+                                    </div>
 
-                        <div class="project-card">
-                            <div class="project-name">Archivo y Difusión Online</div>
-                            <div class="project-alias">
-                                // Podcast · iVoox ·
-                                <a
-                                    href="https://www.ivoox.com/en/escuchar-audios-post-apocalipsis-nau_al_4416345_1.html"
-                                    target="_blank"
-                                    >ivoox.com/post-apocalipsis-nau
-                                    <span class="link-icon" aria-hidden="true"></span
-                                ></a>
-                            </div>
-                            <div class="project-desc">
-                                Los programas emitidos se archivan y difunden online, extendiendo el
-                                alcance de la emisión más allá de la frecuencia local. La estrategia
-                                de distribución combina plataformas de podcast, Mixcloud y canales
-                                propios, manteniendo el contenido accesible de forma permanente y
-                                libre de coste. El archivo completo de
-                                <span class="hl">Post Apocalipsis Nau</span> está disponible en
-                                <span class="hl">iVoox</span> para escucha y descarga.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">Podcast</span>
-                                <span class="meta-tag">iVoox</span>
-                                <span class="meta-tag">Archivo</span>
-                                <span class="meta-tag">Distribución</span>
-                                <span class="meta-tag">Online</span>
-                            </div>
-                        </div>
+                                    <div class="project-card">
+                                        <div class="project-name">Radio Comunitaria</div>
+                                        <div class="project-desc">
+                                            Radio Vallekas es un medio comunitario y sin ánimo de
+                                            lucro que opera desde Vallecas. Post Apocalipsis Nau se
+                                            integra en ese ecosistema de medios alternativos con una
+                                            voluntad de servicio público y contracultura.
+                                        </div>
+                                        <div class="project-meta">
+                                            <span class="meta-tag">Medios Alternativos</span>
+                                            <span class="meta-tag">Comunidad</span>
+                                            <span class="meta-tag">No Comercial</span>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <div class="project-card">
-                            <div class="project-name">Cobertura en El Salto Diario</div>
-                            <div class="project-alias">
-                                //
-                                <a
-                                    href="https://elsaltodiario.com/post-apocalipsis-nau"
-                                    target="_blank"
-                                    >elsaltodiario.com/post-apocalipsis-nau
-                                    <span class="link-icon" aria-hidden="true"></span
-                                ></a>
+                                <div class="project-card">
+                                    <div class="project-name">Archivo y Difusión Online</div>
+                                    <div class="project-alias">
+                                        // Podcast · iVoox ·
+                                        <a
+                                            href="https://www.ivoox.com/en/escuchar-audios-post-apocalipsis-nau_al_4416345_1.html"
+                                            target="_blank"
+                                            >ivoox.com/post-apocalipsis-nau
+                                            <span class="link-icon" aria-hidden="true"></span
+                                        ></a>
+                                    </div>
+                                    <div class="project-desc">
+                                        Los programas emitidos se archivan y difunden online,
+                                        extendiendo el alcance de la emisión más allá de la
+                                        frecuencia local. La estrategia de distribución combina
+                                        plataformas de podcast, Mixcloud y canales propios,
+                                        manteniendo el contenido accesible de forma permanente y
+                                        libre de coste. El archivo completo de
+                                        <span class="hl">Post Apocalipsis Nau</span> está disponible
+                                        en <span class="hl">iVoox</span> para escucha y descarga.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">Podcast</span>
+                                        <span class="meta-tag">iVoox</span>
+                                        <span class="meta-tag">Archivo</span>
+                                        <span class="meta-tag">Distribución</span>
+                                        <span class="meta-tag">Online</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-card">
+                                    <div class="project-name">Cobertura en El Salto Diario</div>
+                                    <div class="project-alias">
+                                        //
+                                        <a
+                                            href="https://elsaltodiario.com/post-apocalipsis-nau"
+                                            target="_blank"
+                                            >elsaltodiario.com/post-apocalipsis-nau
+                                            <span class="link-icon" aria-hidden="true"></span
+                                        ></a>
+                                    </div>
+                                    <div class="project-desc">
+                                        Post Apocalipsis Nau cuenta con presencia en
+                                        <span class="hl">El Salto Diario</span>, medio de
+                                        comunicación autogestionado y horizontal. El programa forma
+                                        parte de la sección de blogs y contenidos alternativos del
+                                        diario, alineado con sus valores de independencia,
+                                        autogestión y cultura crítica.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">El Salto Diario</span>
+                                        <span class="meta-tag">Media</span>
+                                        <span class="meta-tag">Cobertura</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="project-desc">
-                                Post Apocalipsis Nau cuenta con presencia en
-                                <span class="hl">El Salto Diario</span>, medio de comunicación
-                                autogestionado y horizontal. El programa forma parte de la sección
-                                de blogs y contenidos alternativos del diario, alineado con sus
-                                valores de independencia, autogestión y cultura crítica.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">El Salto Diario</span>
-                                <span class="meta-tag">Media</span>
-                                <span class="meta-tag">Cobertura</span>
+
+                            <div class="page-footer">
+                                <span class="footer-name">ACG — Adrián Cano González</span>
+                                <span class="footer-page">07</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="page-footer">
-                        <span class="footer-name">ACG — Adrián Cano González</span>
-                        <span class="footer-page">07</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ══════════════════════════════════════════
+                    <!-- ══════════════════════════════════════════
      PAGE-CONT 8 — PREMIOS
 ═══════════════════════════════════════════ -->
-            <div class="page-cont">
-                <div class="page-images" id="images-premios"></div>
+                    <div class="page-cont">
+                        <div class="page-images" id="images-premios"></div>
 
-                <div class="page" id="premios">
-                    <div class="section-header">
-                        <span class="section-num">07 /</span>
-                        <h1 class="section-title">Premios</h1>
-                        <span class="section-tag">Reconocimientos · Awards</span>
-                    </div>
+                        <div class="page" id="premios">
+                            <div class="section-header">
+                                <span class="section-num">07 /</span>
+                                <h1 class="section-title">Premios</h1>
+                                <span class="section-tag">Reconocimientos · Awards</span>
+                            </div>
 
-                    <div class="intro-box">
-                        <p>
-                            El trabajo de ACG ha sido reconocido en festivales y certámenes
-                            nacionales en las categorías de diseño, videoarte y producción
-                            audiovisual.
-                        </p>
-                    </div>
+                            <div class="intro-box">
+                                <p>
+                                    El trabajo de ACG ha sido reconocido en festivales y certámenes
+                                    nacionales en las categorías de diseño, videoarte y producción
+                                    audiovisual.
+                                </p>
+                            </div>
 
-                    <div class="project-grid">
-                        <div class="award-card">
-                            <div class="award-icon">◆</div>
-                            <div class="award-info">
-                                <div class="award-title">LAUS de Bronce — RGBexplorations</div>
-                                <div class="award-body">
-                                    Premio LAUS de Bronce otorgado por el ADG-FAD (Asociació de
-                                    Dissenyadors Gràfics i Directors d'Art de la Federació
-                                    d'Associacions de Dissenyadors) por el proyecto
-                                    <span class="hl">RGBexplorations</span>, presentado bajo el
-                                    nombre <span class="hl">Adrián Cano</span>. Los premios LAUS son
-                                    uno de los galardones más prestigiosos del diseño y la
-                                    comunicación visual en el ámbito hispanohablante.
-                                    RGBexplorations investiga la descomposición cromática, la
-                                    materialidad del píxel y la estética del error digital a través
-                                    de la manipulación de canales RGB.
+                            <div class="project-grid">
+                                <div class="award-card">
+                                    <div class="award-icon">◆</div>
+                                    <div class="award-info">
+                                        <div class="award-title">
+                                            LAUS de Bronce — RGBexplorations
+                                        </div>
+                                        <div class="award-body">
+                                            Premio LAUS de Bronce otorgado por el ADG-FAD (Asociació
+                                            de Dissenyadors Gràfics i Directors d'Art de la
+                                            Federació d'Associacions de Dissenyadors) por el
+                                            proyecto
+                                            <span class="hl">RGBexplorations</span>, presentado bajo
+                                            el nombre <span class="hl">Adrián Cano</span>. Los
+                                            premios LAUS son uno de los galardones más prestigiosos
+                                            del diseño y la comunicación visual en el ámbito
+                                            hispanohablante. RGBexplorations investiga la
+                                            descomposición cromática, la materialidad del píxel y la
+                                            estética del error digital a través de la manipulación
+                                            de canales RGB.
+                                        </div>
+                                        <span class="award-year"
+                                            >ADG-FAD · Premio LAUS · Diseño y Comunicación Visual ·
+                                            <a
+                                                href="https://www.youtube.com/watch?v=zXnCvP_bnd4"
+                                                target="_blank"
+                                                >youtube.com/watch?v=zXnCvP_bnd4
+                                                <span
+                                                    class="link-icon"
+                                                    aria-hidden="true"></span></a
+                                        ></span>
+                                    </div>
                                 </div>
-                                <span class="award-year"
-                                    >ADG-FAD · Premio LAUS · Diseño y Comunicación Visual ·
-                                    <a
-                                        href="https://www.youtube.com/watch?v=zXnCvP_bnd4"
-                                        target="_blank"
-                                        >youtube.com/watch?v=zXnCvP_bnd4
-                                        <span class="link-icon" aria-hidden="true"></span></a
-                                ></span>
-                            </div>
-                        </div>
 
-                        <div class="award-card">
-                            <div class="award-icon">◆</div>
-                            <div class="award-info">
-                                <div class="award-title">
-                                    Premio Feelmotion — Categoría Videoarte
+                                <div class="award-card">
+                                    <div class="award-icon">◆</div>
+                                    <div class="award-info">
+                                        <div class="award-title">
+                                            Premio Feelmotion — Categoría Videoarte
+                                        </div>
+                                        <div class="award-body">
+                                            Cortometraje ganador en la categoría de
+                                            <span class="hl">videoarte</span> del Festival de Cortos
+                                            Feelmotion. El festival Feelmotion reúne producciones
+                                            audiovisuales independientes y reconoce trabajos que
+                                            proponen nuevos lenguajes en la imagen en movimiento. La
+                                            pieza premiada combina la manipulación de imagen, el
+                                            diseño sonoro y la narrativa no lineal en un formato de
+                                            cortometraje experimental.
+                                        </div>
+                                        <span class="award-year"
+                                            >Festival Feelmotion · Categoría Videoarte · Cortos ·
+                                            <a
+                                                href="https://www.youtube.com/watch?v=0UIlbd5lOCI"
+                                                target="_blank"
+                                                >Ver en YouTube
+                                                <span
+                                                    class="link-icon"
+                                                    aria-hidden="true"></span></a
+                                        ></span>
+                                    </div>
                                 </div>
-                                <div class="award-body">
-                                    Cortometraje ganador en la categoría de
-                                    <span class="hl">videoarte</span> del Festival de Cortos
-                                    Feelmotion. El festival Feelmotion reúne producciones
-                                    audiovisuales independientes y reconoce trabajos que proponen
-                                    nuevos lenguajes en la imagen en movimiento. La pieza premiada
-                                    combina la manipulación de imagen, el diseño sonoro y la
-                                    narrativa no lineal en un formato de cortometraje experimental.
+                            </div>
+
+                            <div class="divider"></div>
+
+                            <div class="sobre-acg">
+                                <div class="section-header">
+                                    <span class="section-num">— /</span>
+                                    <h2 class="subsection-title">Sobre ACG</h2>
                                 </div>
-                                <span class="award-year"
-                                    >Festival Feelmotion · Categoría Videoarte · Cortos ·
-                                    <a
-                                        href="https://www.youtube.com/watch?v=0UIlbd5lOCI"
-                                        target="_blank"
-                                        >Ver en YouTube
-                                        <span class="link-icon" aria-hidden="true"></span></a
-                                ></span>
+                                <div class="project-card">
+                                    <div class="project-name">Advanced Cybernetics Group</div>
+                                    <div class="project-alias">
+                                        // Adrián Cano González · Madrid
+                                    </div>
+                                    <div class="project-desc">
+                                        ACG son las iniciales de Adrián Cano González y también la
+                                        abreviatura de Advanced Cybernetics Group. Este nombre actúa
+                                        como entidad paraguas que unifica todos los proyectos
+                                        artísticos y nombres de alias utilizados en las distintas
+                                        disciplinas y contextos. La elección del nombre no es
+                                        casual: hace referencia a la cibernética como estudio de
+                                        sistemas, retroalimentación y control —conceptos que
+                                        atraviesan de forma transversal toda la práctica artística,
+                                        desde la música generativa hasta el diseño web.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">Multidisciplinar</span>
+                                        <span class="meta-tag">Madrid</span>
+                                        <span class="meta-tag">Arte + Tecnología</span>
+                                        <span class="meta-tag">Open Source</span>
+                                        <span class="meta-tag">DIY</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-card" style="margin: 16px 0">
+                                    <div class="project-name">Identidad, Alias y Colectivismo</div>
+                                    <div class="project-alias">
+                                        // NSK · FLOSS · Colectivo de Colectivos
+                                    </div>
+                                    <div class="project-desc">
+                                        La multiplicidad de nombres —nullable, optikCalx, R.PHLUX.D,
+                                        Max Tinnitus, U+0000— no es dispersión sino estrategia. Cada
+                                        alias abre un espacio de enunciación distinto, una identidad
+                                        que puede ser ocupada, compartida o abandonada sin que el
+                                        cuerpo biográfico quede atrapado en ella. Esta lógica
+                                        conecta con la práctica del colectivo esloveno
+                                        <span class="hl">NSK</span>
+                                        (Neue Slowenische Kunst), cuya estructura de
+                                        <em>colectivo de colectivos</em> —Laibach, IRWIN, Scipion
+                                        Nasice— demostró que la identidad artística puede ser una
+                                        construcción deliberada, transferible y políticamente
+                                        activa: un nombre que nadie posee del todo y que por eso
+                                        mismo puede ser de todos. <br /><br />
+                                        La identidad múltiple no es pérdida de identidad sino
+                                        negativa a fijarla. Operar bajo distintos alias es también
+                                        una forma de resistencia a la marca personal, al perfil
+                                        único y rastreable que la lógica de plataforma exige. Si el
+                                        capitalismo de red necesita sujetos identificables, la
+                                        respuesta es la multiplicación y el desdoblamiento.
+                                        <br /><br />
+                                        Esta práctica se ancla en la filosofía
+                                        <span class="hl">FLOSS</span> (Free/Libre Open Source
+                                        Software): el conocimiento como bien común, el código como
+                                        escritura compartida, la autoría como proceso colectivo.
+                                        Igual que el software libre se copia, se modifica y se
+                                        redistribuye sin pedir permiso, los proyectos de ACG están
+                                        pensados para existir en red —con otros artistas,
+                                        colectivos, espacios— y no como obra cerrada de un
+                                        individuo. El colectivismo no es aquí retórica: es el modo
+                                        de producción.
+                                    </div>
+                                    <div class="project-meta">
+                                        <span class="meta-tag">NSK</span>
+                                        <span class="meta-tag">Identidad Múltiple</span>
+                                        <span class="meta-tag">FLOSS</span>
+                                        <span class="meta-tag">Colectivismo</span>
+                                        <span class="meta-tag">Común</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="page-footer">
+                                <span class="footer-name">ACG — Adrián Cano González</span>
+                                <span class="footer-page">08</span>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="divider"></div>
-
-                    <div class="sobre-acg">
-                        <div class="section-header">
-                            <span class="section-num">— /</span>
-                            <h2 class="subsection-title">Sobre ACG</h2>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-name">Advanced Cybernetics Group</div>
-                            <div class="project-alias">// Adrián Cano González · Madrid</div>
-                            <div class="project-desc">
-                                ACG son las iniciales de Adrián Cano González y también la
-                                abreviatura de Advanced Cybernetics Group. Este nombre actúa como
-                                entidad paraguas que unifica todos los proyectos artísticos y
-                                nombres de alias utilizados en las distintas disciplinas y
-                                contextos. La elección del nombre no es casual: hace referencia a la
-                                cibernética como estudio de sistemas, retroalimentación y control
-                                —conceptos que atraviesan de forma transversal toda la práctica
-                                artística, desde la música generativa hasta el diseño web.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">Multidisciplinar</span>
-                                <span class="meta-tag">Madrid</span>
-                                <span class="meta-tag">Arte + Tecnología</span>
-                                <span class="meta-tag">Open Source</span>
-                                <span class="meta-tag">DIY</span>
-                            </div>
-                        </div>
-
-                        <div class="project-card" style="margin: 16px 0">
-                            <div class="project-name">Identidad, Alias y Colectivismo</div>
-                            <div class="project-alias">
-                                // NSK · FLOSS · Colectivo de Colectivos
-                            </div>
-                            <div class="project-desc">
-                                La multiplicidad de nombres —nullable, optikCalx, R.PHLUX.D, Max
-                                Tinnitus, U+0000— no es dispersión sino estrategia. Cada alias abre
-                                un espacio de enunciación distinto, una identidad que puede ser
-                                ocupada, compartida o abandonada sin que el cuerpo biográfico quede
-                                atrapado en ella. Esta lógica conecta con la práctica del colectivo
-                                esloveno <span class="hl">NSK</span>
-                                (Neue Slowenische Kunst), cuya estructura de
-                                <em>colectivo de colectivos</em> —Laibach, IRWIN, Scipion Nasice—
-                                demostró que la identidad artística puede ser una construcción
-                                deliberada, transferible y políticamente activa: un nombre que nadie
-                                posee del todo y que por eso mismo puede ser de todos. <br /><br />
-                                La identidad múltiple no es pérdida de identidad sino negativa a
-                                fijarla. Operar bajo distintos alias es también una forma de
-                                resistencia a la marca personal, al perfil único y rastreable que la
-                                lógica de plataforma exige. Si el capitalismo de red necesita
-                                sujetos identificables, la respuesta es la multiplicación y el
-                                desdoblamiento.
-                                <br /><br />
-                                Esta práctica se ancla en la filosofía
-                                <span class="hl">FLOSS</span> (Free/Libre Open Source Software): el
-                                conocimiento como bien común, el código como escritura compartida,
-                                la autoría como proceso colectivo. Igual que el software libre se
-                                copia, se modifica y se redistribuye sin pedir permiso, los
-                                proyectos de ACG están pensados para existir en red —con otros
-                                artistas, colectivos, espacios— y no como obra cerrada de un
-                                individuo. El colectivismo no es aquí retórica: es el modo de
-                                producción.
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-tag">NSK</span>
-                                <span class="meta-tag">Identidad Múltiple</span>
-                                <span class="meta-tag">FLOSS</span>
-                                <span class="meta-tag">Colectivismo</span>
-                                <span class="meta-tag">Común</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="page-footer">
-                        <span class="footer-name">ACG — Adrián Cano González</span>
-                        <span class="footer-page">08</span>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- /.wrapper -->
+                <!-- /.wrapper -->
 
-        <!-- ribbon de cierre (div con background → no afecta al lightbox) -->
-        <div class="footer-ribbon" aria-hidden="true"></div>
-            </div><!-- /#smooth-content -->
-        </div><!-- /#smooth-wrapper -->
+                <!-- ribbon de cierre (div con background → no afecta al lightbox) -->
+                <div class="footer-ribbon" aria-hidden="true"></div>
+            </div>
+            <!-- /#smooth-content -->
+        </div>
+        <!-- /#smooth-wrapper -->
         <script src="js/smooth-scroll.js" defer></script>
         <script src="js/pixel-sort.js" defer></script>
         <script src="js/premios-shader.js" defer></script>

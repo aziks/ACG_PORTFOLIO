@@ -172,7 +172,7 @@ body {
 }
 
 .masonry > ul > li {
-    height: 40vh;
+    height: 61vh;
     flex-grow: 1;
     overflow: hidden;
 }
@@ -180,7 +180,7 @@ body {
 .masonry > ul > li > img {
     max-height: 100%;
     min-width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: 0.3s ease-in-out;
 }
 
@@ -725,6 +725,10 @@ body {
         font-size: 15px;
     }
 
+    .cover {
+        padding: 68px 44px 52px 44px;
+    }
+
     .cover-acronym {
         font-size: 22vw;
     }
@@ -736,7 +740,6 @@ body {
     .section-title {
         font-size: 1.6rem;
     }
-
 
     .page-footer {
         position: static;
@@ -764,6 +767,10 @@ body {
 }
 
 @media screen and (max-width: 512px) {
+    .cover {
+        padding: 48px 24px 32px 24px;
+    }
+
     .masonry > ul {
         flex-direction: column;
     }
