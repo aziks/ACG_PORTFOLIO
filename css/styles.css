@@ -1,6 +1,5 @@
 /* ============================================================
    ACG — Adrián Cano González · Dossier Artístico
-   acg_dossier.css
    ============================================================ */
 
 /* ── FONTS ── */
@@ -136,10 +135,10 @@ body {
 /* ── T37 CANVAS ── */
 #t37-canvas {
     display: block;
-    /* position: absolute; */
-    inset: 0;
     width: 75%;
-    height: 75%;
+    /* mantiene el aspect ratio de wordart.png para que la imagen
+       se vea entera sin recortes horizontales                    */
+    aspect-ratio: 2194 / 1461;
 }
 
 /* ── PAGE — columna de contenido (40%) ── */
@@ -147,7 +146,7 @@ body {
     flex: 0 0 40%;
     width: 40%;
     min-height: 100%;
-    padding: 64px 56px;
+    padding: 32px 28px;
     page-break-after: always;
     position: relative;
     background: var(--bg);
@@ -716,7 +715,7 @@ body {
         flex: none;
         width: 100%;
         min-height: auto;
-        padding: 8vw 5vw 16vw 5vw;
+        padding: 4vw 2.5vw 8vw 2.5vw;
         overflow-y: visible;
         order: 1;
     }
@@ -785,5 +784,38 @@ body {
 
     #images-web li {
         height: 23vh;
+    }
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — LAPTOP (901-1599px)
+   reduce todos los textos a ~70% bajando el root font-size:
+   body (0.875rem) → ~10.5px ≈ equivalente a 0.6rem original
+   ══════════════════════════════════════════ */
+@media screen and (min-width: 901px) and (max-width: 1599px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — LARGE SCREENS (≥1600px)
+   restaura el padding generoso de .page
+   y duplica el tamaño visual del shader de premios
+   ══════════════════════════════════════════ */
+@media screen and (min-width: 1600px) {
+    .page {
+        padding: 64px 56px;
+    }
+
+    /* canvas a 200% con offset -50% en ambos ejes para que su centro
+       coincida con el centro del contenedor — la rotación se mantiene
+       perfectamente centrada y el contenedor (overflow:hidden) recorta
+       las esquinas que sobran                                            */
+    #premios-canvas {
+        width: 200%;
+        height: 200%;
+        top: -50%;
+        left: -50%;
     }
 }

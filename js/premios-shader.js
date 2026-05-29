@@ -38,9 +38,11 @@
             vec2 FC = gl_FragCoord.xy;
             vec4 o  = vec4(0.0);
 
-            /* el factor 1.6 amplía el rango de p → zoom out: la
-               "esfera" pasa a ocupar la zona central con margen alrededor */
-            vec2 p  = (FC * 2.0 - r) / r.y * 3.0;
+            /* factor de zoom out: cuanto mayor, más pequeña aparece la
+               esfera dentro del canvas. 5.5 deja la esfera compacta en el
+               centro con margen suficiente para que la rotación no la
+               recorte en pantallas con aspect ratio variado.            */
+            vec2 p  = (FC * 2.0 - r) / r.y * 5.5;
             vec2 l  = vec2(0.0);
             vec2 i  = vec2(0.0);
 

@@ -264,9 +264,12 @@
             resetPingPong();
         };
 
-        /* ── resize ── */
+        /* ── resize ──
+           Se mide el canvas (no el contenedor) para que la
+           resolución interna coincida con el tamaño visible,
+           sea cual sea la regla CSS (75%, aspect-ratio, etc.). */
         function resize(){
-            const r = container.getBoundingClientRect();
+            const r = canvas.getBoundingClientRect();
             const w = Math.round(r.width);
             const h = Math.round(r.height);
             if(canvas.width === w && canvas.height === h) return;
