@@ -311,6 +311,16 @@ body {
     line-height: 1.8;
 }
 
+.cover-index a {
+    color: inherit; /* hereda el color muted del .cover-index */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cover-index a:hover {
+    color: var(--accent); /* cambio sutil a gris claro al pasar */
+}
+
 /* ══════════════════════════════════════════
    SECTION HEADER
    ══════════════════════════════════════════ */
@@ -441,7 +451,7 @@ body {
    ══════════════════════════════════════════ */
 .award-card {
     border: 1px solid var(--border);
-    padding: 20px 24px;
+    padding: 10px 12px;
     display: flex;
     align-items: flex-start;
     gap: 20px;
@@ -454,7 +464,6 @@ body {
     color: var(--secondary);
     line-height: 1;
     flex-shrink: 0;
-    width: 40px;
     text-align: center;
 }
 
@@ -789,12 +798,38 @@ body {
 
 /* ══════════════════════════════════════════
    RESPONSIVE — LAPTOP (901-1599px)
-   reduce todos los textos a ~70% bajando el root font-size:
-   body (0.875rem) → ~10.5px ≈ equivalente a 0.6rem original
+   reduce todos los textos a ~70% bajando el root font-size
+   y compacta la cover para que quepa en un viewport
    ══════════════════════════════════════════ */
 @media screen and (min-width: 901px) and (max-width: 1599px) {
     html {
         font-size: 12px;
+    }
+
+    /* cover: padding al nivel del resto de .page */
+    .cover {
+        padding: 32px 28px;
+    }
+
+    /* compactar los bloques internos para que toda la
+       cover quepa en una altura de viewport             */
+    .cover-top {
+        padding-bottom: 16px;
+        margin-bottom: 24px;
+    }
+
+    .cover-hero {
+        padding: 24px 0;
+    }
+
+    .cover-acronym {
+        margin-bottom: 16px;
+    }
+
+    /* canvas limitado a 75vh para no forzar al contenedor
+       más allá del viewport                                */
+    #cover-canvas {
+        height: 75vh;
     }
 }
 
