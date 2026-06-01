@@ -28,6 +28,11 @@
     src: url("/home/claude/fonts/Datatype-Regular.ttf") format("truetype");
     font-weight: 400;
 }
+@font-face {
+    font-family: "Robocops";
+    src: url("../fonts/robocops-font/RobocopsDemo-womAz.otf") format("opentype");
+    font-weight: 400;
+}
 
 /* ── RESET ── */
 * {
@@ -234,10 +239,10 @@ body {
 }
 
 .cover-acronym {
-    font-family: "Datatype", monospace;
+    font-family: "Robocops", "Datatype", monospace;
     font-size: 7rem;
     font-weight: 400;
-    color: var(--highlight);
+    color: var(--accent);
     letter-spacing: -0.02em;
     line-height: 0.9;
     margin-bottom: 32px;
@@ -301,6 +306,16 @@ body {
     color: var(--muted);
     letter-spacing: 0.08em;
     line-height: 1.8;
+}
+
+.cover-contact a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cover-contact a:hover {
+    color: var(--accent);
 }
 
 .cover-index {
