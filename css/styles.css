@@ -246,6 +246,42 @@ body {
     letter-spacing: -0.02em;
     line-height: 0.9;
     margin-bottom: 32px;
+    /* oculto hasta que el JS termina de envolver las letras —
+       evita el flash inicial con el texto plano visible.
+       Mantengo visibility (no display) para no colapsar el layout. */
+    visibility: hidden;
+}
+
+.cover-acronym.is-ready {
+    visibility: visible;
+}
+
+/* cada letra arranca apagada y "se enciende" con pestañeos
+   tipo tubo fluorescente. JS la envuelve en <span class="letter">
+   y aplica un animation-delay distinto a cada una.              */
+.cover-acronym .letter {
+    display: inline-block;
+    opacity: 0;
+    animation: fluorescent-warmup 1.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fluorescent-warmup {
+      0% { opacity: 0;    text-shadow: none; }
+      5% { opacity: 0.5; }
+      8% { opacity: 0; }
+     14% { opacity: 0.7; }
+     17% { opacity: 0.1; }
+     26% { opacity: 0; }
+     32% { opacity: 0.6;  text-shadow: 0 0 6px rgba(224,224,224,0.2); }
+     36% { opacity: 0.25; }
+     45% { opacity: 0.85; }
+     50% { opacity: 0.4; }
+     60% { opacity: 0.9; }
+     65% { opacity: 0.55; }
+     75% { opacity: 1;    text-shadow: 0 0 10px rgba(224,224,224,0.25); }
+     80% { opacity: 0.75; }
+     90% { opacity: 0.95; }
+    100% { opacity: 1;    text-shadow: 0 0 12px rgba(224,224,224,0.25); }
 }
 
 .cover-fullname {

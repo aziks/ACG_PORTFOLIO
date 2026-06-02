@@ -90,4 +90,44 @@
     } else {
         initCardLineReveal();
     }
+
+    /* ════════════════════════════════════════════════
+       COVER-ACRONYM — encendido tipo fluorescente
+       Envuelve cada letra de .cover-acronym en un
+       <span class="letter"> con animation-delay propio.
+       La animación CSS hace el pestañeo + ramp-up.
+    ════════════════════════════════════════════════ */
+    function initAcronymFlicker() {
+        const target = document.querySelector(".cover-acronym");
+        if (!target) return;
+        const text = target.textContent;
+        if (!text || !text.trim()) return;
+
+        target.innerHTML = "";
+        let letterIdx = 0;
+        const stepSeconds = 0.65; /* desfase entre letras */
+        for (const ch of text) {
+            if (/\S/.test(ch)) {
+                const span = document.createElement("span");
+                span.className = "letter";
+                span.textContent = ch;
+                span.style.animationDelay = (letterIdx * stepSeconds) + "s";
+                target.appendChild(span);
+                letterIdx++;
+            } else {
+                target.appendChild(document.createTextNode(ch));
+            }
+        }
+
+        /* el CSS oculta .cover-acronym con visibility:hidden; aquí lo
+           hacemos visible para que las animaciones de las letras (que
+           empiezan en opacity:0) tomen el relevo sin flash previo.    */
+        target.classList.add("is-ready");
+    }
+
+    const fontsReady =
+        document.fonts && document.fonts.ready
+            ? document.fonts.ready
+            : Promise.resolve();
+    fontsReady.then(initAcronymFlicker);
 })();
