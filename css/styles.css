@@ -401,6 +401,13 @@ body {
     width: 2px;
     height: 100%;
     background: var(--highlight);
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: transform 1.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.project-card.is-visible::before {
+    transform: scaleY(1);
 }
 
 .project-name {
